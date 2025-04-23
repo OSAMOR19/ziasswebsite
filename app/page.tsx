@@ -311,9 +311,12 @@ export default function Home() {
                 <Button size="lg" className="bg-ziass-gold text-white hover:bg-ziass-gold/90">
                   Contact Us
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                  Learn More
-                </Button>
+                <Button
+                    size="lg"
+                    className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
+                  >
+                    Learn More
+                  </Button>
               </div>
             </div>
           </FadeIn>
