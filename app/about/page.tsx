@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Shield, Users, Award, Target } from "lucide-react"
 import TeamMember from "@/components/about/team-member"
+import FadeIn from "@/components/animations/fade-in"
 
 export default function AboutPage() {
   const teamMembers = [
@@ -142,10 +143,10 @@ export default function AboutPage() {
           </div>
 
           <div className="relative">
-            {/* Timeline */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-electric-blue/20"></div>
+            {/* Timeline line - visible on larger screens */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-ziass-green/20 hidden md:block"></div>
 
-            <div className="space-y-16">
+            <div className="space-y-12">
               {[
                 {
                   year: "2015",
@@ -183,17 +184,33 @@ export default function AboutPage() {
                   isLeft: true,
                 },
               ].map((event, index) => (
-                <div key={index} className={`relative flex ${event.isLeft ? "justify-start" : "justify-end"}`}>
-                  <div className={`w-5/12 ${event.isLeft ? "text-right pr-8" : "text-left pl-8"}`}>
-                    <div className="bg-white rounded-lg p-6 shadow-md">
-                      <div className="text-electric-blue font-bold text-xl mb-2">{event.year}</div>
-                      <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                      <p className="text-charcoal/80">{event.description}</p>
+                <FadeIn
+                  key={index}
+                  direction={event.isLeft ? "right" : "left"}
+                  delay={index * 0.1}
+                  className="relative"
+                >
+                  <div className={`flex flex-col md:flex-row ${event.isLeft ? "md:justify-start" : "md:justify-end"}`}>
+                    {/* Timeline dot - visible on larger screens */}
+                    <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-6 h-6 rounded-full bg-ziass-green border-4 border-white hidden md:block"></div>
+
+                    {/* Mobile year indicator */}
+                    <div className="bg-ziass-green text-white font-bold py-1 px-4 rounded-full inline-block mb-2 md:hidden">
+                      {event.year}
+                    </div>
+
+                    <div
+                      className={`w-full md:w-5/12 ${event.isLeft ? "md:text-right md:pr-8" : "md:text-left md:pl-8"}`}
+                    >
+                      <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+                        {/* Desktop year indicator */}
+                        <div className="text-ziass-green font-bold text-xl mb-2 hidden md:block">{event.year}</div>
+                        <h3 className="text-xl font-bold mb-2">{event.title}</h3>
+                        <p className="text-charcoal/80">{event.description}</p>
+                      </div>
                     </div>
                   </div>
-
-                  <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1 w-6 h-6 rounded-full bg-electric-blue border-4 border-white"></div>
-                </div>
+                </FadeIn>
               ))}
             </div>
           </div>

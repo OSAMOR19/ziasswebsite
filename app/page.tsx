@@ -67,10 +67,15 @@ export default function Home() {
               </FadeIn>
               <FadeIn direction="up" delay={0.4} duration={0.7}>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <Button size="lg" className="bg-ziass-gold hover:bg-ziass-gold/90 text-white">
-                    Get Started
-                  </Button>
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                  <Link href="/courses">
+                    <Button size="lg" className="bg-ziass-gold hover:bg-ziass-gold/90 text-white">
+                      Get Started
+                    </Button>
+                  </Link>
+                  <Button
+                    size="lg"
+                    className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
+                  >
                     Learn More
                   </Button>
                 </div>
