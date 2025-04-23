@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ziass-green: 150 100% 17%;
+    --ziass-gold: 46 65% 52%;
+    --light-gray: 220 20% 97%;
+    --charcoal: 0 0% 17%;
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 17%;
+
+    --primary: 150 100% 17%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 46 65% 52%;
+    --secondary-foreground: 0 0% 17%;
+
+    --muted: 220 20% 97%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 46 65% 52%;
+    --accent-foreground: 0 0% 17%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 100% 17% / 0.1;
+    --input: 150 100% 17% / 0.2;
+    --ring: 46 65% 52%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-ziass-green text-white rounded-lg px-6 py-3 font-medium transition-all duration-200 hover:shadow-md hover:border hover:border-ziass-gold;
+  }
+
+  .btn-secondary {
+    @apply bg-ziass-gold text-white rounded-lg px-6 py-3 font-medium transition-all duration-200 hover:shadow-md hover:bg-ziass-gold/90;
+  }
+
+  .btn-outline {
+    @apply border-2 border-ziass-green text-ziass-green rounded-lg px-6 py-3 font-medium transition-all duration-200 hover:bg-ziass-green hover:text-white;
+  }
+
+  .card-shadow {
+    @apply bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-6 border border-ziass-green/10;
+  }
+}
