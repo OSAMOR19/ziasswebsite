@@ -163,9 +163,12 @@ export default function Home() {
                 </ul>
               </StaggerChildren>
               <FadeIn direction="up" delay={0.6}>
-                <Button className="bg-ziass-green text-white hover:bg-ziass-green/90 hover:border hover:border-ziass-gold mt-4">
-                  Learn More About Us
-                </Button>
+              <Button
+                    size="lg"
+                    className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
+                  >
+                    Learn More
+                  </Button>
               </FadeIn>
             </div>
           </div>

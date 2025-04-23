@@ -245,9 +245,12 @@ export default function InitiativesPage() {
               <Button size="lg" className="bg-white text-electric-blue hover:bg-gray-100">
                 Contact Us
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Learn More
-              </Button>
+              <Button
+                    size="lg"
+                    className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
+                  >
+                    Learn More
+                  </Button>
             </div>
           </div>
         </div>
