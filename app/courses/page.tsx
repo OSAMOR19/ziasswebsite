@@ -5,6 +5,11 @@ import CourseCard from "@/components/courses/course-card"
 import FadeIn from "@/components/animations/fade-in"
 import AnimatedBackground from "@/components/animations/animated-background"
 import Link from "next/link"
+import course1 from "@/components/images/TechWorkspace.jpeg"
+import course2 from "@/components/images/pentest.jpg"
+import course3 from "@/components/images/cyberfund.jpeg"
+import course4 from "@/components/images/cyberfund.jpeg"
+
 
 export default function CoursesPage() {
   const courses = [
@@ -13,33 +18,33 @@ export default function CoursesPage() {
       title: "Cybersecurity Fundamentals",
       description:
         "Learn the basics of cybersecurity, including key concepts, common threats, and essential protection strategies.",
-      price: 299,
+      price: 29,
       duration: "4 weeks",
       level: "Beginner",
       icon: <Shield className="h-12 w-12 text-ziass-green" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: course3,
     },
     {
       id: "cs201",
       title: "Network Security Essentials",
       description:
         "Dive into network security principles, protocols, and best practices for protecting organizational infrastructure.",
-      price: 399,
+      price: 39,
       duration: "6 weeks",
       level: "Intermediate",
       icon: <BookOpen className="h-12 w-12 text-ziass-green" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: course1,
     },
     {
       id: "cs301",
       title: "Advanced Penetration Testing",
       description:
         "Master the techniques used by ethical hackers to identify and exploit vulnerabilities in systems and applications.",
-      price: 599,
+      price: 59,
       duration: "8 weeks",
       level: "Advanced",
       icon: <Award className="h-12 w-12 text-ziass-green" />,
-      image: "/placeholder.svg?height=300&width=400",
+      image: course2,
     },
   ]
 
@@ -88,7 +93,7 @@ export default function CoursesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn direction="right">
               <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
-                <Image src="/placeholder.svg?height=500&width=600" alt="ZIASS Training" fill className="object-cover" />
+                <Image src={course4} alt="ZIASS Training" fill className="object-cover" />
               </div>
             </FadeIn>
             <div className="space-y-6">

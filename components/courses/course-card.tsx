@@ -17,7 +17,7 @@ interface CourseProps {
     duration: string
     level: string
     icon: React.ReactNode
-    image: string
+    image: any
   }
 }
 
