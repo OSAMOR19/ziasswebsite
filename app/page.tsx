@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -171,22 +172,32 @@ export default function Home() {
               <FadeIn direction="left">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">About ZIASS</h2>
                 <div className="space-y-4">
-                  <p className="text-lg text-charcoal/80">
+                  <p className="text-lg text-charcoal/80 truncate" id="about-text">
                     At ZIASS, we place a strong priority on customer service. We understand the 
                     critical importance of protecting your information assets today while securing 
                     your business for tomorrow.
-                  </p>
-                  <p className="text-lg text-charcoal/80">
+                    <p className="text-lg text-charcoal/80">
                     We pride ourselves on providing unparalleled customer service that exceeds 
                     expectations. Our commitment is backed by strict adherence to our Service Level 
                     Agreements, ensuring reliability you can count on.
                   </p>
                   <p className="text-lg text-charcoal/80">
-                    With over 50 years of combined experience in cybersecurity practice, we bring 
+                    With over 50 years of combined experience in cybersecurity practice, we bring
                     extensive industry knowledge and expertise in Information Assurance and IT Security. 
                     This depth of experience, coupled with our strong foundation in academic and 
                     business research, gives us our unique edge in the market.
                   </p>
+
+                  </p>
+                  <button className="text-ziass-green hover:text-ziass-gold font-medium" onClick={() => {
+                    const textElement = document.getElementById('about-text');
+                    if (textElement) {
+                      textElement.classList.toggle('truncate');
+                    }
+                  }}>
+                    Read More
+                  </button>
+                  
                   <div className="pt-2">
                     <p className="text-md font-medium text-ziass-green">
                       For direct assistance, contact our CEO:

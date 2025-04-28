@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 interface ProductCardProps {
   name: string
   description: string
-  image: string
+  image: any
   href: string
   category: string
 }

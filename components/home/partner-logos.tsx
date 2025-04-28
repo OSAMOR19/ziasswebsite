@@ -3,14 +3,20 @@
 import { useRef, useEffect } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import Darktrace from "@/components/images/darktracelogo.png"
+import Proofpoint from "@/components/images/Proofpoint.jpg"
+import Cisco from "@/components/images/cisco.jpg"
+import PaloAltoNetworks from "@/components/images/PaloAltoNetworks.png"
+import Fortinet from "@/components/images/Fortinet.png"
+import CrowdStrike from "@/components/images/crowdstrike.png"
 
 const partners = [
-  { name: "Darktrace", logo: "/placeholder.svg?height=60&width=180" },
-  { name: "Proofpoint", logo: "/placeholder.svg?height=60&width=180" },
-  { name: "Cisco", logo: "/placeholder.svg?height=60&width=180" },
-  { name: "Palo Alto Networks", logo: "/placeholder.svg?height=60&width=180" },
-  { name: "Fortinet", logo: "/placeholder.svg?height=60&width=180" },
-  { name: "CrowdStrike", logo: "/placeholder.svg?height=60&width=180" },
+  { name: "Darktrace", logo: Darktrace },
+  { name: "Proofpoint", logo: Proofpoint },
+  { name: "Cisco", logo: Cisco },
+  { name: "Palo Alto Networks", logo: PaloAltoNetworks },
+  { name: "Fortinet", logo: Fortinet },
+  { name: "CrowdStrike", logo: CrowdStrike },
 ]
 
 export default function PartnerLogos() {
