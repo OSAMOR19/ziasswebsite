@@ -29,10 +29,17 @@ export default function ContactPage() {
         <div className="container-custom">
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="h-[500px] w-full">
-              {/* Google Maps Embed would go here */}
-              <div className="w-full h-full bg-light-gray flex items-center justify-center">
-                <p className="text-charcoal/60 text-lg">Google Maps Embed</p>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.1776119991766!2d7.4912863!3d9.0428683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0ba5c5112e8d%3A0x4c3a9ab8f12b4d1a!2sFebson%20Mall%2C%20Wuse%20Zone%204%2C%20Abuja!5e0!3m2!1sen!2sng!4v1652345678901!5m2!1sen!2sng"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="ZIASS Office Location"
+                aria-label="Map showing ZIASS office location at Febson Mall, Wuse Zone 4, Abuja"
+              ></iframe>
             </div>
           </div>
         </div>

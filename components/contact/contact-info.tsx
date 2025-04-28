@@ -62,7 +62,6 @@ export default function ContactInfo() {
             <p className="text-charcoal/80">
               Monday - Friday: 9:00 AM - 6:00 PM
               <br />
-              Saturday - Sunday: Closed
             </p>
           </div>
         </div>

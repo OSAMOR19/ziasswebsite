@@ -177,7 +177,7 @@ export default function ServicesPage() {
               </Button>
             </div>
 
-            <div className="bg-white/10 rounded-lg p-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 shadow-lg">
               <h3 className="text-2xl font-bold mb-4">Request a Consultation</h3>
               <form className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -188,8 +188,9 @@ export default function ServicesPage() {
                     <input
                       type="text"
                       id="name"
-                      className="w-full px-4 py-2 rounded-md bg-white/5 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-accent-cyan"
+                      className="w-full px-4 py-2 rounded-md bg-white/10 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-cyan focus:border-transparent"
                       placeholder="Your Name"
+                      required
                     />
                   </div>
                   <div>
@@ -199,8 +200,9 @@ export default function ServicesPage() {
                     <input
                       type="email"
                       id="email"
-                      className="w-full px-4 py-2 rounded-md bg-white/5 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-accent-cyan"
+                      className="w-full px-4 py-2 rounded-md bg-white/10 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-cyan focus:border-transparent"
                       placeholder="your@email.com"
+                      required
                     />
                   </div>
                 </div>
@@ -210,13 +212,14 @@ export default function ServicesPage() {
                   </label>
                   <select
                     id="service"
-                    className="w-full px-4 py-2 rounded-md bg-white/5 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-accent-cyan"
+                    className="w-full px-4 py-2 rounded-md bg-white/10 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-accent-cyan appearance-none"
+                    required
                   >
-                    <option value="" className="bg-deep-blue">
+                    <option value="" disabled selected className="bg-deep-blue">
                       Select a Service
                     </option>
                     {services.map((service, index) => (
-                      <option key={index} value={service.title} className="bg-deep-blue">
+                      <option key={index} value={service.title} className="bg-deep-blue text-white">
                         {service.title}
                       </option>
                     ))}
@@ -229,11 +232,15 @@ export default function ServicesPage() {
                   <textarea
                     id="message"
                     rows={4}
-                    className="w-full px-4 py-2 rounded-md bg-white/5 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-accent-cyan"
+                    className="w-full px-4 py-2 rounded-md bg-white/10 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-cyan focus:border-transparent"
                     placeholder="Tell us about your security needs"
+                    required
                   ></textarea>
                 </div>
-                <Button type="submit" className="w-full bg-accent-cyan hover:bg-accent-cyan/90 text-white">
+                <Button 
+                  type="submit" 
+                  className="w-full bg-accent-cyan hover:bg-accent-cyan/90 text-white font-medium py-3 rounded-md shadow-md hover:shadow-lg transition-all"
+                >
                   Submit Request
                 </Button>
               </form>
