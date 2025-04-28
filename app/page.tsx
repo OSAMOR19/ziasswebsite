@@ -376,7 +376,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-ziass-green to-ziass-green/80 text-black relative overflow-hidden">
+      <section className="py-16 bg-gradient-to-r from-ziass-green to-ziass-green/80 text-white relative overflow-hidden">
         <AnimatedBackground className="opacity-20" />
         <div className="container-custom relative z-10">
           <FadeIn direction="up">
