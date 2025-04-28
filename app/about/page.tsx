@@ -327,21 +327,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-electric-blue to-accent-cyan text-white">
-        <div className="container-custom">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Team</h2>
-            <p className="text-xl mb-8">
-              We're always looking for talented individuals who are passionate about cybersecurity. Explore career
-              opportunities at ZIASS.
-            </p>
-            <Button size="lg" className="bg-white text-electric-blue hover:bg-gray-100">
-              View Open Positions
-            </Button>
-          </div>
-        </div>
-      </section>
     </>
   )
 }
