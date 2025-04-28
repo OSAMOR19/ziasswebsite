@@ -29,7 +29,7 @@ const mainNavItems = [
     submenu: [
       { title: "Darktrace", href: "/products/darktrace" },
       { title: "Proofpoint", href: "/products/proofpoint" },
-      { title: "Other Partners", href: "/products/partners" },
+  
     ],
   },
   {
