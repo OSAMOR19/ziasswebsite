@@ -1,10 +1,10 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Shield, Users, Award, Target } from "lucide-react"
-import TeamMember from "@/components/about/team-member"
-import FadeIn from "@/components/animations/fade-in"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Kazem from "@/components/images/kazeem.png"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Shield, Users, Award, Target } from "lucide-react";
+import TeamMember from "@/components/about/team-member";
+import FadeIn from "@/components/animations/fade-in";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Kazem from "@/components/images/kazeem.png";
 
 export default function AboutPage() {
   const boardMembers = [
@@ -19,14 +19,16 @@ export default function AboutPage() {
       title: "CEO",
       bio: "Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations. He holds a Ph.D in Information Systems and Business from the University of Ibadan.",
       image: Kazem,
-      fullBio: "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of ZIASS Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP)."
+      fullBio:
+        "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of ZIASS Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).",
     },
     {
       name: "Dr. Tunde Ali",
       title: "Non-Executive Director",
       bio: "A first-class medical professional with over 17 years of medical practice across multiple countries.",
       image: "/placeholder.svg?height=300&width=300",
-      fullBio: "Dr. Tunde Alli is a first-class medical professional with over 17 years of medical practice in Nigeria, South Africa, Australia, and Canada. He is Consultant Anesthesia, Consultant Family Practice. His specialties include pain management, family practice, medical IT services, and internet marketing."
+      fullBio:
+        "Dr. Tunde Alli is a first-class medical professional with over 17 years of medical practice in Nigeria, South Africa, Australia, and Canada. He is Consultant Anesthesia, Consultant Family Practice. His specialties include pain management, family practice, medical IT services, and internet marketing.",
     },
     {
       name: "Eng. Gbolahan Oshonubi",
@@ -40,7 +42,7 @@ export default function AboutPage() {
       bio: "Contributing valuable insights to the governance of ZIASS.",
       image: "/placeholder.svg?height=300&width=300",
     },
-  ]
+  ];
 
   const managementTeam = [
     {
@@ -48,14 +50,16 @@ export default function AboutPage() {
       title: "CEO",
       bio: "Leading ZIASS with over 30 years of ICT experience across various sectors.",
       image: Kazem,
-      fullBio: "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of ZIASS Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP)."
+      fullBio:
+        "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of ZIASS Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).",
     },
     {
       name: "Mr. Ibrahim Oladeji",
       title: "CFO",
       bio: "An IT professional with over a decade of experience building solutions for various sectors.",
       image: "/placeholder.svg?height=300&width=300",
-      fullBio: "Oladeji Oluwaseyi Ibraaheem is an IT professional with over a decade of experience. He has worked in several organizations and built IT solutions for various sectors. He has extensive experience leading IT teams and projects toward achieving efficiency and client satisfaction."
+      fullBio:
+        "Oladeji Oluwaseyi Ibraaheem is an IT professional with over a decade of experience. He has worked in several organizations and built IT solutions for various sectors. He has extensive experience leading IT teams and projects toward achieving efficiency and client satisfaction.",
     },
     {
       name: "Olisa Okafor",
@@ -63,7 +67,7 @@ export default function AboutPage() {
       bio: "Specializing in threat detection and security analysis to protect client assets.",
       image: "/placeholder.svg?height=300&width=300",
     },
-  ]
+  ];
 
   return (
     <>
@@ -71,9 +75,12 @@ export default function AboutPage() {
       <section className="pt-32 pb-16 bg-gradient-to-r from-deep-blue to-electric-blue text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl text-black md:text-5xl font-bold mb-6">About ZIASS</h1>
+            <h1 className="text-4xl text-black md:text-5xl font-bold mb-6">
+              About ZIASS
+            </h1>
             <p className="text-xl text-black">
-              Leading the way in cybersecurity solutions to protect businesses in an evolving threat landscape.
+              Leading the way in cybersecurity solutions to protect businesses
+              in an evolving threat landscape.
             </p>
           </div>
         </div>
@@ -84,51 +91,81 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
-              <Image src="/placeholder.svg?height=500&width=600" alt="ZIASS Mission" fill className="object-cover" />
+              <Image
+                src="/placeholder.svg?height=500&width=600"
+                alt="ZIASS Mission"
+                fill
+                className="object-cover"
+              />
             </div>
 
             <div className="space-y-6">
-              <div>
-                <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
-                <p className="text-lg text-charcoal/80">
-                  At ZIASS, our mission is to empower organizations with the security capabilities they need to thrive
-                  in the digital age. We are committed to providing innovative, effective, and accessible cybersecurity
-                  solutions that protect our clients' most valuable assets.
-                </p>
-              </div>
-
               <div className="mt-10">
                 <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
                 <p className="text-lg text-charcoal/80">
-                  Our vision is to create a world where organizations can operate securely in the digital landscape,
-                  free from the fear of cyber threats. We strive to be the trusted security partner that enables
-                  businesses to innovate and grow with confidence.
+                  To protect your critical information assets and services today
+                  and always.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+                <p className="text-lg text-charcoal/80">
+                  To work with you to protect and safeguard your critical
+                  information assets and services. We will achieve this through
+                  our groundbreaking research in the theory and practice of
+                  information assurance and security. We will share ideas with
+                  you on your most important cybersecurity priorities. These, we
+                  will deliver to the delight of our customers and other
+                  stakeholders.
+                </p>
+              </div>
+              
+              <div className="mt-10">
+                <h2 className="text-3xl font-bold mb-4">What drives us</h2>
+                <p className="text-lg text-charcoal/80">
+                  Our business philosophy is deeply rooted in our unflinching
+                  belief that “Nothing's impossible”. We only need to “Keep
+                  Thinking”! This has been the drive behind the innovations we
+                  come up with at ZIASS Limited. Our employees have passed
+                  through the special training module designed to engrain the
+                  Philosophy of “nothing is impossible”. Come, and have a taste
+                  of the possibility by challenging us.
                 </p>
               </div>
 
               <div className="mt-10">
                 <h2 className="text-3xl font-bold mb-4">Our Values</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div className="grid grid-cols-1 gap-6 mt-6">
                   {[
                     {
-                      icon: <Shield className="h-8 w-8 text-electric-blue" />,
-                      title: "Integrity",
-                      description: "We operate with honesty and transparency in all our interactions.",
+                      icon: <Target className="h-8 w-8 text-electric-blue" />,
+                      title: "Creativity",
+                      description:
+                        "We create innovations through our resolute belief that \"Nothing's Impossible\" To achieve the impossible in solving our customer's cybersecurity challenges, we simply keep thinking and utilize the best industry standards and tools.",
                     },
                     {
                       icon: <Users className="h-8 w-8 text-electric-blue" />,
-                      title: "Collaboration",
-                      description: "We work closely with our clients to understand their unique needs.",
+                      title: "Customer Delight",
+                      description:
+                        "We will not stop until you are delighted. We pride ourselves in unparalleled customer delight principles for conducting our business. Our internal and external customers will have this to say about us: \"We are delighted.\"",
                     },
                     {
                       icon: <Award className="h-8 w-8 text-electric-blue" />,
-                      title: "Excellence",
-                      description: "We strive for the highest standards in everything we do.",
+                      title: "Innovation",
+                      description:
+                        "Innovation is at the heart of what we do. We keep striving for new ways of getting things done with dramatic improvements in cost, quality, time, and risk.",
                     },
                     {
-                      icon: <Target className="h-8 w-8 text-electric-blue" />,
-                      title: "Innovation",
-                      description: "We continuously evolve our solutions to address emerging threats.",
+                      icon: <Users className="h-8 w-8 text-electric-blue" />,
+                      title: "People",
+                      description:
+                        "Our people are the brains behind our success. We have equipped our people with what it takes to provoke their intellectual curiosity.",
+                    },
+                    {
+                      icon: <Shield className="h-8 w-8 text-electric-blue" />,
+                      title: "Faith in God",
+                      description:
+                        "We believe in God to inspire us and bless the works of our hands",
                     },
                   ].map((value, index) => (
                     <div key={index} className="flex">
@@ -152,15 +189,20 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Team</h2>
             <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-              Meet the experts behind ZIASS who are dedicated to protecting your organization from cyber threats.
+              Meet the experts behind ZIASS who are dedicated to protecting your
+              organization from cyber threats.
             </p>
           </div>
 
           <Tabs defaultValue="board" className="w-full">
             <div className="flex justify-center mb-8">
               <TabsList className="bg-white/50 backdrop-blur-sm">
-                <TabsTrigger value="board" className="text-lg px-6 py-3">Board</TabsTrigger>
-                <TabsTrigger value="management" className="text-lg px-6 py-3">Management</TabsTrigger>
+                <TabsTrigger value="board" className="text-lg px-6 py-3">
+                  Board
+                </TabsTrigger>
+                <TabsTrigger value="management" className="text-lg px-6 py-3">
+                  Management
+                </TabsTrigger>
               </TabsList>
             </div>
 
@@ -168,10 +210,10 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {boardMembers.map((member, index) => (
                   <FadeIn key={index} direction="up" delay={index * 0.1}>
-                    <TeamMember 
-                      name={member.name} 
-                      title={member.title} 
-                      bio={member.bio} 
+                    <TeamMember
+                      name={member.name}
+                      title={member.title}
+                      bio={member.bio}
                       image={member.image}
                       fullBio={member.fullBio}
                     />
@@ -184,10 +226,10 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {managementTeam.map((member, index) => (
                   <FadeIn key={index} direction="up" delay={index * 0.1}>
-                    <TeamMember 
-                      name={member.name} 
-                      title={member.title} 
-                      bio={member.bio} 
+                    <TeamMember
+                      name={member.name}
+                      title={member.title}
+                      bio={member.bio}
                       image={member.image}
                       fullBio={member.fullBio}
                     />
@@ -205,32 +247,41 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
               <div className="lg:col-span-1">
                 <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-md">
-                  <Image 
-                    src={Kazem} 
-                    alt="Dr. Kazeem Durodoye" 
-                    fill 
+                  <Image
+                    src={Kazem}
+                    alt="Dr. Kazeem Durodoye"
+                    fill
                     className="object-cover"
                   />
                 </div>
               </div>
               <div className="lg:col-span-2">
                 <h3 className="text-2xl font-bold mb-2">Dr. Kazeem Durodoye</h3>
-                <p className="text-electric-blue font-medium mb-4">CEO & Founder</p>
+                <p className="text-electric-blue font-medium mb-4">
+                  CEO & Founder
+                </p>
                 <div className="prose max-w-none">
                   <p className="mb-4">
-                    Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations. 
-                    Kazeem is presently the Chief Executive Officer of ZIASS Nigeria Limited. From 2013 to 2016, Dr. Durodoye 
-                    was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited.
+                    Kazeem Durodoye has over 30 years of ICT experience in
+                    public, private, and development organizations. Kazeem is
+                    presently the Chief Executive Officer of ZIASS Nigeria
+                    Limited. From 2013 to 2016, Dr. Durodoye was the Group
+                    Executive Director in charge of Technology and New Media at
+                    LEADERSHIP Newspapers Limited.
                   </p>
                   <p className="mb-4">
-                    He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the 
-                    Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American 
-                    Society of Information Science and Technology (ASIST).
+                    He holds a Ph.D in Information Systems and Business from the
+                    University of Ibadan. He is a fellow of the Nigeria
+                    Computing Society; Computer Professional Registration
+                    Council of Nigeria as well as the American Society of
+                    Information Science and Technology (ASIST).
                   </p>
                   <p className="font-medium">Professional Certifications:</p>
                   <ul className="list-disc pl-5 space-y-1 mt-2">
                     <li>Certified Information Systems Manager (CISM)</li>
-                    <li>Certified in the Governance of Enterprise IT (CGEIT)</li>
+                    <li>
+                      Certified in the Governance of Enterprise IT (CGEIT)
+                    </li>
                     <li>Microfinance Certified Professional (MCP)</li>
                     <li>Project Management Professional (PMP)</li>
                   </ul>
@@ -247,8 +298,8 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Journey</h2>
             <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-              From our founding to today, we've been committed to advancing cybersecurity for organizations of all
-              sizes.
+              From our founding to today, we've been committed to advancing
+              cybersecurity for organizations of all sizes.
             </p>
           </div>
 
@@ -300,7 +351,11 @@ export default function AboutPage() {
                   delay={index * 0.1}
                   className="relative"
                 >
-                  <div className={`flex flex-col md:flex-row ${event.isLeft ? "md:justify-start" : "md:justify-end"}`}>
+                  <div
+                    className={`flex flex-col md:flex-row ${
+                      event.isLeft ? "md:justify-start" : "md:justify-end"
+                    }`}
+                  >
                     {/* Timeline dot - visible on larger screens */}
                     <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-6 h-6 rounded-full bg-ziass-green border-4 border-white hidden md:block"></div>
 
@@ -310,12 +365,20 @@ export default function AboutPage() {
                     </div>
 
                     <div
-                      className={`w-full md:w-5/12 ${event.isLeft ? "md:text-right md:pr-8" : "md:text-left md:pl-8"}`}
+                      className={`w-full md:w-5/12 ${
+                        event.isLeft
+                          ? "md:text-right md:pr-8"
+                          : "md:text-left md:pl-8"
+                      }`}
                     >
                       <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
                         {/* Desktop year indicator */}
-                        <div className="text-ziass-green font-bold text-xl mb-2 hidden md:block">{event.year}</div>
-                        <h3 className="text-xl font-bold mb-2">{event.title}</h3>
+                        <div className="text-ziass-green font-bold text-xl mb-2 hidden md:block">
+                          {event.year}
+                        </div>
+                        <h3 className="text-xl font-bold mb-2">
+                          {event.title}
+                        </h3>
                         <p className="text-charcoal/80">{event.description}</p>
                       </div>
                     </div>
@@ -326,7 +389,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
     </>
-  )
+  );
 }

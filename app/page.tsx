@@ -1,56 +1,66 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Shield, Lock, Server, Users, CheckCircle } from "lucide-react"
-import HeroCarousel from "@/components/home/hero-carousel"
-import ServiceCard from "@/components/home/service-card"
-import PartnerLogos from "@/components/home/partner-logos"
-import TestimonialSlider from "@/components/home/testimonial-slider"
-import StatCard from "@/components/home/stat-card"
-import FadeIn from "@/components/animations/fade-in"
-import StaggerChildren from "@/components/animations/stagger-children"
-import AnimatedText from "@/components/animations/animated-text"
-import AnimatedBackground from "@/components/animations/animated-background"
-import Aboutimg from "@/components/images/FuturisticCode.jpeg"
-import Initiative1 from "@/components/images/Focusedcourse.jpeg"
-import Initiative2 from "@/components/images/FocusedProgrammer.jpeg"
-import Initiative3 from "@/components/images/Professionalcourse.jpeg"
-
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  ArrowRight,
+  Shield,
+  Lock,
+  Server,
+  Users,
+  CheckCircle,
+} from "lucide-react";
+import HeroCarousel from "@/components/home/hero-carousel";
+import ServiceCard from "@/components/home/service-card";
+import PartnerLogos from "@/components/home/partner-logos";
+import TestimonialSlider from "@/components/home/testimonial-slider";
+import StatCard from "@/components/home/stat-card";
+import FadeIn from "@/components/animations/fade-in";
+import StaggerChildren from "@/components/animations/stagger-children";
+import AnimatedText from "@/components/animations/animated-text";
+import AnimatedBackground from "@/components/animations/animated-background";
+import Aboutimg from "@/components/images/FuturisticCode.jpeg";
+import Initiative1 from "@/components/images/Focusedcourse.jpeg";
+import Initiative2 from "@/components/images/FocusedProgrammer.jpeg";
+import Initiative3 from "@/components/images/Professionalcourse.jpeg";
 
 export default function Home() {
   const services = [
     {
       title: "Professional Services",
-      description: "Expert cybersecurity consulting tailored to your business needs.",
+      description:
+        "Expert cybersecurity consulting tailored to your business needs.",
       icon: <Shield className="h-10 w-10 text-ziass-green" />,
       href: "/services/professional-services",
     },
     {
       title: "Risk Management",
-      description: "Identify, assess, and mitigate security risks to protect your assets.",
+      description:
+        "Identify, assess, and mitigate security risks to protect your assets.",
       icon: <Lock className="h-10 w-10 text-ziass-green" />,
       href: "/services/risk-management",
     },
     {
       title: "Penetration Testing",
-      description: "Proactive security testing to identify vulnerabilities before attackers do.",
+      description:
+        "Proactive security testing to identify vulnerabilities before attackers do.",
       icon: <Server className="h-10 w-10 text-ziass-green" />,
       href: "/services/penetration-testing",
     },
     {
       title: "CISO/vCISO",
-      description: "Strategic security leadership without the full-time executive cost.",
+      description:
+        "Strategic security leadership without the full-time executive cost.",
       icon: <Users className="h-10 w-10 text-ziass-green" />,
       href: "/services/ciso",
     },
-  ]
+  ];
 
   const stats = [
     { value: "500+", label: "Clients Protected" },
     { value: "99.9%", label: "Uptime Guarantee" },
     { value: "24/7", label: "Support Available" },
     { value: "100+", label: "Security Experts" },
-  ]
+  ];
 
   return (
     <>
@@ -62,18 +72,25 @@ export default function Home() {
             <div className="space-y-6">
               <FadeIn direction="up" duration={0.7}>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                  <AnimatedText text="Secure Your Digital Future with ZIASS" type="words" />
+                  <AnimatedText
+                    text="Secure Your Digital Future with ZIASS"
+                    type="words"
+                  />
                 </h1>
               </FadeIn>
               <FadeIn direction="up" delay={0.2} duration={0.7}>
                 <p className="text-xl text-gray-200">
-                  Comprehensive cybersecurity solutions to protect your business from evolving threats.
+                  Comprehensive cybersecurity solutions to protect your business
+                  from evolving threats.
                 </p>
               </FadeIn>
               <FadeIn direction="up" delay={0.4} duration={0.7}>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Link href="/courses">
-                    <Button size="lg" className="bg-ziass-gold hover:bg-ziass-gold/90 text-white">
+                    <Button
+                      size="lg"
+                      className="bg-ziass-gold hover:bg-ziass-gold/90 text-white"
+                    >
                       Get Started
                     </Button>
                   </Link>
@@ -100,10 +117,12 @@ export default function Home() {
         <div className="container-custom">
           <FadeIn direction="up">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Our Services
+              </h2>
               <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-                We offer a comprehensive range of cybersecurity services to protect your organization from evolving
-                threats.
+                We offer a comprehensive range of cybersecurity services to
+                protect your organization from evolving threats.
               </p>
             </div>
           </FadeIn>
@@ -140,19 +159,46 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn direction="right">
               <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
-                <Image src={Aboutimg} alt="About ZIASS" fill className="object-cover" />
+                <Image
+                  src={Aboutimg}
+                  alt="About ZIASS"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </FadeIn>
             <div className="space-y-6">
               <FadeIn direction="left">
-                <h2 className="text-3xl md:text-4xl font-bold">About ZIASS</h2>
-                <p className="text-lg text-charcoal/80">
-                  ZIASS is a leading cybersecurity company dedicated to protecting businesses from evolving cyber
-                  threats. With our team of expert security professionals, we provide comprehensive security solutions
-                  tailored to your specific needs.
-                </p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">About ZIASS</h2>
+                <div className="space-y-4">
+                  <p className="text-lg text-charcoal/80">
+                    At ZIASS, we place a strong priority on customer service. We understand the 
+                    critical importance of protecting your information assets today while securing 
+                    your business for tomorrow.
+                  </p>
+                  <p className="text-lg text-charcoal/80">
+                    We pride ourselves on providing unparalleled customer service that exceeds 
+                    expectations. Our commitment is backed by strict adherence to our Service Level 
+                    Agreements, ensuring reliability you can count on.
+                  </p>
+                  <p className="text-lg text-charcoal/80">
+                    With over 50 years of combined experience in cybersecurity practice, we bring 
+                    extensive industry knowledge and expertise in Information Assurance and IT Security. 
+                    This depth of experience, coupled with our strong foundation in academic and 
+                    business research, gives us our unique edge in the market.
+                  </p>
+                  <div className="pt-2">
+                    <p className="text-md font-medium text-ziass-green">
+                      For direct assistance, contact our CEO:
+                    </p>
+                    <p className="text-md">
+                      Dr. Kazeem Durodoye | <span className="text-ziass-green">+2348051200000</span> | <span className="text-ziass-green">kazeem@ziass.ca</span>
+                    </p>
+                  </div>
+                </div>
               </FadeIn>
-              <StaggerChildren>
+              <StaggerChildren className="pt-4">
+                <h3 className="text-xl font-semibold mb-3">Our Strengths:</h3>
                 <ul className="space-y-3">
                   {[
                     "Industry-leading security expertise",
@@ -162,18 +208,20 @@ export default function Home() {
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
                       <CheckCircle className="h-6 w-6 text-ziass-green mr-2 flex-shrink-0" />
-                      <span>{item}</span>
+                      <span className="text-charcoal/90">{item}</span>
                     </li>
                   ))}
                 </ul>
               </StaggerChildren>
               <FadeIn direction="up" delay={0.6}>
-              <Button
+                <Link href="/about">
+                  <Button
                     size="lg"
-                    className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
+                    className="mt-4 bg-ziass-green hover:bg-ziass-green/90 text-white"
                   >
-                    Learn More
+                    Learn More About Us
                   </Button>
+                </Link>
               </FadeIn>
             </div>
           </div>
@@ -198,9 +246,12 @@ export default function Home() {
         <div className="container-custom">
           <FadeIn direction="up">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Initiatives</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Our Initiatives
+              </h2>
               <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-                We're committed to advancing cybersecurity awareness and education through our community initiatives.
+                We're committed to advancing cybersecurity awareness and
+                education through our community initiatives.
               </p>
             </div>
           </FadeIn>
@@ -240,8 +291,12 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">{initiative.title}</h3>
-                    <p className="text-charcoal/80 mb-4">{initiative.description}</p>
+                    <h3 className="text-xl font-bold mb-2">
+                      {initiative.title}
+                    </h3>
+                    <p className="text-charcoal/80 mb-4">
+                      {initiative.description}
+                    </p>
                     <Link
                       href={initiative.href}
                       className="text-ziass-green hover:text-ziass-gold font-medium inline-flex items-center group"
@@ -264,7 +319,8 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Our Partners</h2>
               <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-                We collaborate with industry-leading technology providers to deliver the best security solutions.
+                We collaborate with industry-leading technology providers to
+                deliver the best security solutions.
               </p>
             </div>
           </FadeIn>
@@ -275,7 +331,10 @@ export default function Home() {
 
           <FadeIn direction="up" delay={0.4}>
             <div className="text-center mt-12">
-              <Link href="/products" className="btn-primary inline-flex items-center group">
+              <Link
+                href="/products"
+                className="btn-primary inline-flex items-center group"
+              >
                 Explore Our Products
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
@@ -289,9 +348,12 @@ export default function Home() {
         <div className="container-custom">
           <FadeIn direction="up">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                What Our Clients Say
+              </h2>
               <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-                Hear from organizations that have transformed their security posture with ZIASS.
+                Hear from organizations that have transformed their security
+                posture with ZIASS.
               </p>
             </div>
           </FadeIn>
@@ -303,30 +365,36 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-ziass-green to-ziass-green/80 text-white relative overflow-hidden">
+      <section className="py-16 bg-gradient-to-r from-ziass-green to-ziass-green/80 text-black relative overflow-hidden">
         <AnimatedBackground className="opacity-20" />
         <div className="container-custom relative z-10">
           <FadeIn direction="up">
             <div className="text-center max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Secure Your Business?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Secure Your Business?
+              </h2>
               <p className="text-xl mb-8">
-                Contact us today for a free security assessment and discover how ZIASS can protect your organization.
+                Contact us today for a free security assessment and discover how
+                ZIASS can protect your organization.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button size="lg" className="bg-ziass-gold text-white hover:bg-ziass-gold/90">
+                <Button
+                  size="lg"
+                  className="bg-ziass-gold text-white hover:bg-ziass-gold/90"
+                >
                   Contact Us
                 </Button>
                 <Button
-                    size="lg"
-                    className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
-                  >
-                    Learn More
-                  </Button>
+                  size="lg"
+                  className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
+                >
+                  Learn More
+                </Button>
               </div>
             </div>
           </FadeIn>
         </div>
       </section>
     </>
-  )
+  );
 }

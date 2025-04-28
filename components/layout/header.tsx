@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils"
 
 const mainNavItems = [
   {
-    title: "Services",
+    title: "Our services",
     href: "/services",
     submenu: [
       { title: "Professional Services", href: "/services/professional-services" },
