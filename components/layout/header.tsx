@@ -36,7 +36,7 @@ const mainNavItems = [
     title: "Initiatives",
     href: "/initiatives",
     submenu: [
-      { title: "Cybersecurity Youth League", href: "/initiatives/youth-league" },
+      // { title: "Cybersecurity Youth League", href: "/initiatives/youth-league" },
       { title: "Awareness Campaigns", href: "/initiatives/awareness" },
       { title: "Education & Training", href: "/initiatives/education" },
     ],
