@@ -5,6 +5,8 @@ import TeamMember from "@/components/about/team-member";
 import FadeIn from "@/components/animations/fade-in";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Kazem from "@/components/images/kazeem.png";
+import About1 from "@/components/images/abouttech1.jpeg";
+import About2 from "@/components/images/ziasslogo.jpg";
 
 export default function AboutPage() {
   const boardMembers = [
@@ -90,15 +92,16 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="/placeholder.svg?height=500&width=600"
-                alt="ZIASS Mission"
-                fill
-                className="object-cover"
-              />
+            <div className="space-y-6 w-full">
+              <div className="mb-4 w-full">
+                <div className="relative w-full h-65 rounded-lg overflow-hidden shadow-lg mb-4">
+                  <Image src={About1} alt="ZIASS Mission" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" />
+                </div>
+                <div className="relative w-full h-50 rounded-lg overflow-hidden shadow-lg">
+                  <Image src={About2} alt="ZIASS Vision" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" />
+                </div>
+              </div>
             </div>
-
             <div className="space-y-6">
               <div className="mt-10">
                 <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
@@ -119,7 +122,6 @@ export default function AboutPage() {
                   stakeholders.
                 </p>
               </div>
-              
               <div className="mt-10">
                 <h2 className="text-3xl font-bold mb-4">What drives us</h2>
                 <p className="text-lg text-charcoal/80">
@@ -132,13 +134,12 @@ export default function AboutPage() {
                   of the possibility by challenging us.
                 </p>
               </div>
-
               <div className="mt-10">
                 <h2 className="text-3xl font-bold mb-4">Our Values</h2>
                 <div className="grid grid-cols-1 gap-6 mt-6">
                   {[
                     {
-                      icon: <Target className="h-8 w-8 text-electric-blue" />,
+                      icon: <Target className="h-8 w-8 text-electric-blue" />, 
                       title: "Creativity",
                       description:
                         "We create innovations through our resolute belief that \"Nothing's Impossible\" To achieve the impossible in solving our customer's cybersecurity challenges, we simply keep thinking and utilize the best industry standards and tools.",
