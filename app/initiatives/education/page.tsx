@@ -276,7 +276,7 @@ export default function EducationPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-deep-blue text-white">
+      <section className="py-16 bg-deep-blue text-black">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Invest in the Future of Cybersecurity</h2>
@@ -296,7 +296,7 @@ export default function EducationPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10"
+                  className="border-white text-black hover:bg-white/10"
                 >
                   Contact Dr. Kazeem
                 </Button>
