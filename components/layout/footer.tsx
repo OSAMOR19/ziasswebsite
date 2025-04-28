@@ -134,18 +134,18 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-ziass-gold mr-3 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">123 Security Street, Cyber City, 10001</span>
+                <span className="text-gray-300">Febson Mall Wuse Zone 4, Abuja FCT, Nigeria</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-ziass-gold mr-3 flex-shrink-0" />
                 <a href="tel:+1234567890" className="text-gray-300 hover:text-ziass-gold transition-colors">
-                  +1 (234) 567-890
+                  +14439853735, +234-805-120-0000
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-ziass-gold mr-3 flex-shrink-0" />
-                <a href="mailto:info@ziass.com" className="text-gray-300 hover:text-ziass-gold transition-colors">
-                  info@ziass.com
+                <a href="mailto:kazeem@zeemak.ca" className="text-gray-300 hover:text-ziass-gold transition-colors">
+                  kazeem@zeemak.ca
                 </a>
               </li>
             </ul>

@@ -3,18 +3,21 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
+import img1 from "@/components/images/carouselworthy1.jpg"
+import img2 from "@/components/images/carouselworthy3.jpeg"
+import img3 from "@/components/images/carouselworthy4.jpeg"
 
 const slides = [
   {
-    image: "/placeholder.svg?height=400&width=600",
+    image: img1,
     alt: "Cybersecurity Protection",
   },
   {
-    image: "/placeholder.svg?height=400&width=600",
+    image: img2,
     alt: "Network Security",
   },
   {
-    image: "/placeholder.svg?height=400&width=600",
+    image: img3,
     alt: "Data Protection",
   },
 ]

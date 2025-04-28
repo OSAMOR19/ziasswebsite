@@ -18,9 +18,9 @@ export default function ContactInfo() {
           <div>
             <h3 className="text-lg font-bold">Our Location</h3>
             <p className="text-charcoal/80">
-              123 Security Street
+              Febson Mall Wuse Zone 4, 
               <br />
-              Cyber City, 10001
+              Abuja FCT, Nigeria
             </p>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function ContactInfo() {
             <h3 className="text-lg font-bold">Phone</h3>
             <p className="text-charcoal/80">
               <a href="tel:+1234567890" className="hover:text-electric-blue transition-colors">
-                +1 (234) 567-890
+                +14439853735
               </a>
             </p>
           </div>
@@ -46,8 +46,8 @@ export default function ContactInfo() {
           <div>
             <h3 className="text-lg font-bold">Email</h3>
             <p className="text-charcoal/80">
-              <a href="mailto:info@ziass.com" className="hover:text-electric-blue transition-colors">
-                info@ziass.com
+              <a href="mailto:kazeem@zeemak.ca" className="hover:text-electric-blue transition-colors">
+                kazeem@zeemak.ca
               </a>
             </p>
           </div>

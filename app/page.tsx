@@ -11,6 +11,11 @@ import FadeIn from "@/components/animations/fade-in"
 import StaggerChildren from "@/components/animations/stagger-children"
 import AnimatedText from "@/components/animations/animated-text"
 import AnimatedBackground from "@/components/animations/animated-background"
+import Aboutimg from "@/components/images/FuturisticCode.jpeg"
+import Initiative1 from "@/components/images/Focusedcourse.jpeg"
+import Initiative2 from "@/components/images/FocusedProgrammer.jpeg"
+import Initiative3 from "@/components/images/Professionalcourse.jpeg"
+
 
 export default function Home() {
   const services = [
@@ -135,7 +140,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn direction="right">
               <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
-                <Image src="/placeholder.svg?height=500&width=600" alt="About ZIASS" fill className="object-cover" />
+                <Image src={Aboutimg} alt="About ZIASS" fill className="object-cover" />
               </div>
             </FadeIn>
             <div className="space-y-6">
@@ -206,21 +211,21 @@ export default function Home() {
                 title: "Cybersecurity Youth League",
                 description:
                   "Empowering the next generation of cybersecurity professionals through education and hands-on experience.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: Initiative3,
                 href: "/initiatives/youth-league",
               },
               {
                 title: "Awareness Campaigns",
                 description:
                   "Raising awareness about cybersecurity best practices and emerging threats through public campaigns.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: Initiative2,
                 href: "/initiatives/awareness",
               },
               {
                 title: "Education & Training",
                 description:
                   "Providing comprehensive cybersecurity education and training programs for individuals and organizations.",
-                image: "/placeholder.svg?height=300&width=400",
+                image: Initiative1,
                 href: "/initiatives/education",
               },
             ].map((initiative, index) => (
