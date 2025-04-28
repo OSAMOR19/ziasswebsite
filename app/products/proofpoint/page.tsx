@@ -293,7 +293,7 @@ export default function ProofpointPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-deep-blue text-white">
+      <section className="py-16 bg-deep-blue text-black">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Secure Your Email Communications</h2>
