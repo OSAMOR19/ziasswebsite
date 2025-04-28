@@ -8,7 +8,7 @@ import Link from "next/link"
 import course1 from "@/components/images/TechWorkspace.jpeg"
 import course2 from "@/components/images/pentest.jpg"
 import course3 from "@/components/images/cyberfund.jpeg"
-import course4 from "@/components/images/cyberfund.jpeg"
+import course4 from "@/components/images/cheerful.jpeg"
 
 
 export default function CoursesPage() {
