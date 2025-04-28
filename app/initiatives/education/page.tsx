@@ -52,17 +52,7 @@ export default function EducationPage() {
                   To enrol your school in CYL, please email 
                   <a href="mailto:kazeem@ziass.ca" className="text-electric-blue hover:underline"> kazeem@ziass.ca</a>
                 </p>
-                <div className="mt-6">
-                  <Image 
-                    src="/images/kazeem.png" 
-                    alt="Dr. Kazeem Durodoye" 
-                    width={150} 
-                    height={150} 
-                    className="rounded-full mx-auto mb-4" 
-                  />
-                  <p className="text-center font-medium">Dr. Kazeem Durodoye</p>
-                  <p className="text-center text-sm text-charcoal/70">Program Director</p>
-                </div>
+                
               </div>
 
               <div className="bg-white rounded-lg p-8 shadow-md border border-gray-100">
