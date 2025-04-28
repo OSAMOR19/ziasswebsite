@@ -8,8 +8,8 @@ export default function ContactPage() {
       <section className="pt-32 pb-16 bg-gradient-to-r from-deep-blue to-electric-blue text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl text-gray-200">Get in touch with our team to discuss your cybersecurity needs.</p>
+            <h1 className="text-4xl text-black md:text-5xl font-bold mb-6">Contact Us</h1>
+            <p className="text-xl text-black">Get in touch with our team to discuss your cybersecurity needs.</p>
           </div>
         </div>
       </section>

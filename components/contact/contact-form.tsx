@@ -145,7 +145,10 @@ export default function ContactForm() {
           ></textarea>
         </div>
 
-        <Button type="submit" className="w-full bg-electric-blue hover:bg-deep-blue text-white py-3 font-medium transition-colors duration-200">
+        <Button 
+          type="submit" 
+          className="w-full border-black  hover:bg-deep-blue text-white py-3 font-bold transition-colors duration-200 visible"
+        >
           Send Message
         </Button>
       </form>

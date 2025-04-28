@@ -3,31 +3,64 @@ import { Button } from "@/components/ui/button"
 import { Shield, Users, Award, Target } from "lucide-react"
 import TeamMember from "@/components/about/team-member"
 import FadeIn from "@/components/animations/fade-in"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import Kazem from "@/components/images/kazeem.png"
 
 export default function AboutPage() {
-  const teamMembers = [
+  const boardMembers = [
     {
-      name: "John Smith",
-      title: "CEO & Founder",
-      bio: "John has over 20 years of experience in cybersecurity and has led security teams at major financial institutions before founding ZIASS.",
+      name: "Prof. Mutawakilu Tiamiyu",
+      title: "Chairman",
+      bio: "Leading the board with extensive experience in governance and strategic direction.",
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Sarah Johnson",
-      title: "Chief Technology Officer",
-      bio: "Sarah brings 15 years of technical expertise in security architecture and has been instrumental in developing ZIASS's security solutions.",
+      name: "Dr. Kazeem Durodoye",
+      title: "CEO",
+      bio: "Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations. He holds a Ph.D in Information Systems and Business from the University of Ibadan.",
+      image: Kazem,
+      fullBio: "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of ZIASS Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP)."
+    },
+    {
+      name: "Dr. Tunde Ali",
+      title: "Non-Executive Director",
+      bio: "A first-class medical professional with over 17 years of medical practice across multiple countries.",
+      image: "/placeholder.svg?height=300&width=300",
+      fullBio: "Dr. Tunde Alli is a first-class medical professional with over 17 years of medical practice in Nigeria, South Africa, Australia, and Canada. He is Consultant Anesthesia, Consultant Family Practice. His specialties include pain management, family practice, medical IT services, and internet marketing."
+    },
+    {
+      name: "Eng. Gbolahan Oshonubi",
+      title: "Non-Executive Director",
+      bio: "Bringing engineering expertise to guide the strategic direction of ZIASS.",
       image: "/placeholder.svg?height=300&width=300",
     },
     {
-      name: "Michael Chen",
-      title: "Head of Security Operations",
-      bio: "Michael specializes in incident response and threat hunting, with a background in military cybersecurity operations.",
+      name: "Mrs.",
+      title: "Board Member",
+      bio: "Contributing valuable insights to the governance of ZIASS.",
       image: "/placeholder.svg?height=300&width=300",
     },
+  ]
+
+  const managementTeam = [
     {
-      name: "Emily Rodriguez",
-      title: "Director of Compliance",
-      bio: "Emily is an expert in regulatory compliance with extensive experience helping organizations meet industry standards and requirements.",
+      name: "Dr. Kazeem Durodoye",
+      title: "CEO",
+      bio: "Leading ZIASS with over 30 years of ICT experience across various sectors.",
+      image: Kazem,
+      fullBio: "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of ZIASS Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP)."
+    },
+    {
+      name: "Mr. Ibrahim Oladeji",
+      title: "CFO",
+      bio: "An IT professional with over a decade of experience building solutions for various sectors.",
+      image: "/placeholder.svg?height=300&width=300",
+      fullBio: "Oladeji Oluwaseyi Ibraaheem is an IT professional with over a decade of experience. He has worked in several organizations and built IT solutions for various sectors. He has extensive experience leading IT teams and projects toward achieving efficiency and client satisfaction."
+    },
+    {
+      name: "Olisa Okafor",
+      title: "Cybersecurity Analyst",
+      bio: "Specializing in threat detection and security analysis to protect client assets.",
       image: "/placeholder.svg?height=300&width=300",
     },
   ]
@@ -38,8 +71,8 @@ export default function AboutPage() {
       <section className="pt-32 pb-16 bg-gradient-to-r from-deep-blue to-electric-blue text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About ZIASS</h1>
-            <p className="text-xl text-gray-200">
+            <h1 className="text-4xl text-black md:text-5xl font-bold mb-6">About ZIASS</h1>
+            <p className="text-xl text-black">
               Leading the way in cybersecurity solutions to protect businesses in an evolving threat landscape.
             </p>
           </div>
@@ -116,17 +149,94 @@ export default function AboutPage() {
       {/* Our Team */}
       <section className="py-20 bg-light-gray">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Leadership Team</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Team</h2>
             <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
               Meet the experts behind ZIASS who are dedicated to protecting your organization from cyber threats.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <TeamMember key={index} name={member.name} title={member.title} bio={member.bio} image={member.image} />
-            ))}
+          <Tabs defaultValue="board" className="w-full">
+            <div className="flex justify-center mb-8">
+              <TabsList className="bg-white/50 backdrop-blur-sm">
+                <TabsTrigger value="board" className="text-lg px-6 py-3">Board</TabsTrigger>
+                <TabsTrigger value="management" className="text-lg px-6 py-3">Management</TabsTrigger>
+              </TabsList>
+            </div>
+
+            <TabsContent value="board" className="mt-0">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {boardMembers.map((member, index) => (
+                  <FadeIn key={index} direction="up" delay={index * 0.1}>
+                    <TeamMember 
+                      name={member.name} 
+                      title={member.title} 
+                      bio={member.bio} 
+                      image={member.image}
+                      fullBio={member.fullBio}
+                    />
+                  </FadeIn>
+                ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="management" className="mt-0">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {managementTeam.map((member, index) => (
+                  <FadeIn key={index} direction="up" delay={index * 0.1}>
+                    <TeamMember 
+                      name={member.name} 
+                      title={member.title} 
+                      bio={member.bio} 
+                      image={member.image}
+                      fullBio={member.fullBio}
+                    />
+                  </FadeIn>
+                ))}
+              </div>
+            </TabsContent>
+          </Tabs>
+
+          {/* Featured Profile */}
+          <div className="mt-16 bg-white rounded-lg shadow-lg p-8 border border-gray-100">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold">Leadership Profile</h3>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+              <div className="lg:col-span-1">
+                <div className="relative h-[300px] w-full rounded-lg overflow-hidden shadow-md">
+                  <Image 
+                    src={Kazem} 
+                    alt="Dr. Kazeem Durodoye" 
+                    fill 
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-2">
+                <h3 className="text-2xl font-bold mb-2">Dr. Kazeem Durodoye</h3>
+                <p className="text-electric-blue font-medium mb-4">CEO & Founder</p>
+                <div className="prose max-w-none">
+                  <p className="mb-4">
+                    Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations. 
+                    Kazeem is presently the Chief Executive Officer of ZIASS Nigeria Limited. From 2013 to 2016, Dr. Durodoye 
+                    was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited.
+                  </p>
+                  <p className="mb-4">
+                    He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the 
+                    Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American 
+                    Society of Information Science and Technology (ASIST).
+                  </p>
+                  <p className="font-medium">Professional Certifications:</p>
+                  <ul className="list-disc pl-5 space-y-1 mt-2">
+                    <li>Certified Information Systems Manager (CISM)</li>
+                    <li>Certified in the Governance of Enterprise IT (CGEIT)</li>
+                    <li>Microfinance Certified Professional (MCP)</li>
+                    <li>Project Management Professional (PMP)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
