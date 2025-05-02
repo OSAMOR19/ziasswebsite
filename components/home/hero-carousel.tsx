@@ -3,9 +3,12 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
-import img1 from "@/components/images/carouselworthy1.jpg"
-import img2 from "@/components/images/carouselworthy3.jpeg"
-import img3 from "@/components/images/carouselworthy4.jpeg"
+import img1 from "@/components/images/ziascarousel1.png"
+import img2 from "@/components/images/ziascarousel2.png"
+import img3 from "@/components/images/ziascarousel3.png"
+import img4 from "@/components/images/ziascarousel4.png"
+import img5 from "@/components/images/ziascarousel5.png"
+import img6 from "@/components/images/ziascarousel6.png"
 
 const slides = [
   {
@@ -16,10 +19,22 @@ const slides = [
     image: img2,
     alt: "Network Security",
   },
-  {
-    image: img3,
-    alt: "Data Protection",
-  },
+    {
+      image: img3,
+      alt: "Data Protection",
+    },
+    {
+      image: img4,
+      alt: "Data Protection",
+    },
+    {
+      image: img5,
+      alt: "Data Protection",
+    },
+    {
+      image: img6,
+      alt: "Data Protection",
+    },
 ]
 
 export default function HeroCarousel() {

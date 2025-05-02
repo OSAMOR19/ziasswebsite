@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { useSearchParams, useRouter } from "next/navigation"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -12,26 +12,11 @@ import { motion } from "framer-motion"
 import FadeIn from "@/components/animations/fade-in"
 import { ArrowLeft, CheckCircle } from "lucide-react"
 
-const courses = {
-  cs101: {
-    title: "Cybersecurity Fundamentals",
-    price: 25950,
-  },
-  cs201: {
-    title: "Network Security Essentials",
-    price: 25950,
-  },
-  cs301: {
-    title: "Advanced Penetration Testing",
-    price: 25950,
-  },
-}
+// Course price
+const COURSE_PRICE = 25950; // in Naira
 
-export default function EnrollPage() {
+export default function EnrollmentPage() {
   const router = useRouter()
-  const searchParams = useSearchParams()
-  const courseId = searchParams.get("course") || "cs101"
-  const course = courses[courseId as keyof typeof courses] || courses.cs101
 
   const [formData, setFormData] = useState({
     name: "",
@@ -80,8 +65,8 @@ export default function EnrollPage() {
         },
         body: JSON.stringify({
           email: formData.parentEmail || formData.applicantContact,
-          amount: course.price,
-          courseId,
+          amount: COURSE_PRICE,
+          courseId: "cybersecurity-youth-league",
           name: formData.name,
         }),
       });
@@ -322,13 +307,13 @@ export default function EnrollPage() {
                   <div className="border rounded-lg p-6 bg-light-gray">
                     <h3 className="text-lg font-bold mb-4">Order Summary</h3>
                     <div className="flex justify-between mb-2">
-                      <span>{course.title}</span>
-                      <span>{formatPrice(course.price)}</span>
+                      <span>Cybersecurity Youth League</span>
+                      <span>{formatPrice(COURSE_PRICE)}</span>
                     </div>
                     <div className="border-t border-gray-300 my-4"></div>
                     <div className="flex justify-between font-bold">
                       <span>Total</span>
-                      <span>{formatPrice(course.price)}</span>
+                      <span>{formatPrice(COURSE_PRICE)}</span>
                     </div>
                   </div>
 
@@ -362,7 +347,7 @@ export default function EnrollPage() {
                           className="w-full bg-ziass-green hover:bg-ziass-green/90 text-white"
                           disabled={isSubmitting}
                         >
-                          {isSubmitting ? "Processing Payment..." : `Pay ${formatPrice(course.price)}`}
+                          {isSubmitting ? "Processing Payment..." : `Pay ${formatPrice(COURSE_PRICE)}`}
                         </Button>
                         <p className="text-xs text-center mt-2 text-gray-500">
                           You will be redirected to Paystack to complete your payment
@@ -386,4 +371,4 @@ export default function EnrollPage() {
       </div>
     </div>
   )
-}
+} 

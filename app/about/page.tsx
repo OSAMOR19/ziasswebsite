@@ -5,6 +5,10 @@ import TeamMember from "@/components/about/team-member";
 import FadeIn from "@/components/animations/fade-in";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Kazem from "@/components/images/kazeem.png";
+import Tiyamiyu from "@/components/images/tiyamiyu.jpg"
+import Tunde from "@/components/images/tundeali.jpg"
+import Olisa from "@/components/images/olisaemeka.jpg"
+import Ibrahim from "@/components/images/ibrahim.jpg"
 import About1 from "@/components/images/abouttech1.jpeg";
 import About2 from "@/components/images/ziasslogo.jpg";
 
@@ -14,7 +18,7 @@ export default function AboutPage() {
       name: "Prof. Mutawakilu Tiamiyu",
       title: "Chairman",
       bio: "Leading the board with extensive experience in governance and strategic direction.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: Tiyamiyu,
     },
     {
       name: "Dr. Kazeem Durodoye",
@@ -28,7 +32,7 @@ export default function AboutPage() {
       name: "Dr. Tunde Ali",
       title: "Non-Executive Director",
       bio: "A first-class medical professional with over 17 years of medical practice across multiple countries.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: Tunde,
       fullBio:
         "Dr. Tunde Alli is a first-class medical professional with over 17 years of medical practice in Nigeria, South Africa, Australia, and Canada. He is Consultant Anesthesia, Consultant Family Practice. His specialties include pain management, family practice, medical IT services, and internet marketing.",
     },
@@ -59,7 +63,7 @@ export default function AboutPage() {
       name: "Mr. Ibrahim Oladeji",
       title: "CFO",
       bio: "An IT professional with over a decade of experience building solutions for various sectors.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: Ibrahim,
       fullBio:
         "Oladeji Oluwaseyi Ibraaheem is an IT professional with over a decade of experience. He has worked in several organizations and built IT solutions for various sectors. He has extensive experience leading IT teams and projects toward achieving efficiency and client satisfaction.",
     },
@@ -67,7 +71,7 @@ export default function AboutPage() {
       name: "Olisa Okafor",
       title: "Cybersecurity Analyst",
       bio: "Specializing in threat detection and security analysis to protect client assets.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: Olisa,
     },
   ];
 
@@ -98,7 +102,7 @@ export default function AboutPage() {
                   <Image src={About1} alt="ZIASS Mission" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" />
                 </div>
                 <div className="relative w-full h-50 rounded-lg overflow-hidden shadow-lg">
-                  <Image src={About2} alt="ZIASS Vision" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" />
+                  {/* <Image src={About2} alt="ZIASS Vision" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" /> */}
                 </div>
               </div>
             </div>

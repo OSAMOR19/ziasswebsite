@@ -22,6 +22,15 @@ interface CourseProps {
 }
 
 export default function CourseCard({ course }: CourseProps) {
+  // Format price in Naira
+  const formatPrice = (price: number) => {
+    return new Intl.NumberFormat('en-NG', {
+      style: 'currency',
+      currency: 'NGN',
+      minimumFractionDigits: 0,
+    }).format(price);
+  };
+
   return (
     <motion.div
       whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(0, 88, 46, 0.1)" }}
@@ -34,7 +43,7 @@ export default function CourseCard({ course }: CourseProps) {
       <div className="relative h-48">
         <Image src={course.image || "/placeholder.svg"} alt={course.title} fill className="object-cover" />
         <div className="absolute top-4 right-4 bg-ziass-green text-white text-sm font-medium py-1 px-3 rounded-full">
-          ${course.price}
+          {formatPrice(course.price)}
         </div>
       </div>
       <div className="p-6">
