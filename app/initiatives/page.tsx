@@ -33,132 +33,13 @@ export default function InitiativesPage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-r from-deep-blue to-electric-blue text-white">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Initiatives</h1>
-            <p className="text-xl text-gray-200">
-              We're committed to advancing cybersecurity awareness and education through our community initiatives.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Initiatives Overview */}
-      <section className="py-20">
-        <div className="container-custom">
-          <div className="space-y-16">
-            {initiatives.map((initiative, index) => (
-              <InitiativeCard
-                key={index}
-                title={initiative.title}
-                description={initiative.description}
-                icon={initiative.icon}
-                image={initiative.image}
-                href={initiative.href}
-                isReversed={index % 2 !== 0}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Impact Stats */}
       
-
-      {/* Testimonials */}
-      <section className="py-20">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Participants Say</h2>
-            <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-              Hear from individuals who have participated in our initiatives.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                quote:
-                  "The Cybersecurity Youth League program opened my eyes to the exciting world of cybersecurity and gave me the skills and confidence to pursue a career in this field.",
-                author: "Sarah J.",
-                title: "Youth League Graduate",
-              },
-              {
-                quote:
-                  "Cybernovr's awareness campaign at our company significantly improved our employees' security practices and helped us build a stronger security culture.",
-                author: "Michael T.",
-                title: "IT Director",
-              },
-              {
-                quote:
-                  "The training program provided by Cybernovr was comprehensive and practical. I was able to apply what I learned immediately in my role as a security analyst.",
-                author: "David L.",
-                title: "Security Analyst",
-              },
-            ].map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-lg p-8 shadow-md">
-                <div className="text-electric-blue text-4xl font-serif mb-4">"</div>
-                <p className="text-charcoal/80 italic mb-6">{testimonial.quote}</p>
-                <div>
-                  <h4 className="font-bold">{testimonial.author}</h4>
-                  <p className="text-charcoal/70">{testimonial.title}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Get Involved */}
-      <section className="py-16 bg-deep-blue text-white">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Get Involved</h2>
-              <p className="text-xl mb-8">
-                There are many ways to support our initiatives and contribute to advancing cybersecurity awareness and
-                education.
-              </p>
-              <Button size="lg" className="bg-accent-cyan hover:bg-accent-cyan/90 text-white">
-                Join Our Efforts
-              </Button>
-            </div>
-
-            <div className="bg-white/10 rounded-lg p-8">
-              <h3 className="text-2xl font-bold mb-4">Ways to Participate</h3>
-              <ul className="space-y-4">
-                {[
-                  "Volunteer as a mentor for the Youth League",
-                  "Host an awareness workshop at your organization",
-                  "Sponsor a student for our training programs",
-                  "Partner with us for community outreach",
-                  "Share your expertise as a guest speaker",
-                ].map((way, index) => (
-                  <li key={index} className="flex items-start">
-                    <div className="flex-shrink-0 mt-1 mr-3">
-                      <div className="h-5 w-5 rounded-full bg-accent-cyan flex items-center justify-center">
-                        <span className="text-white text-xs">✓</span>
-                      </div>
-                    </div>
-                    <span>{way}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Upcoming Events */}
       <section className="py-20">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Upcoming Events</h2>
-            <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-              Join us at our upcoming events to learn more about cybersecurity and our initiatives.
-            </p>
+            
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
