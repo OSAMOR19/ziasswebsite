@@ -13,7 +13,7 @@ const mainNavItems = [
     title: "Our services",
     href: "",
     submenu: [
-      { title: "Professional Services", href: "/services/professional-services" },
+      { title: "Critical Infrastructure Protection", href: "/services/professional-services" },
       { title: "GRC", href: "/services/grc" },
       { title: "Risk Management", href: "/services/risk-management" },
       { title: "Due Diligence", href: "/services/due-diligence" },

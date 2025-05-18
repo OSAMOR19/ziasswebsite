@@ -92,10 +92,10 @@ export default function Home() {
                       size="lg"
                       className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white w-full sm:w-auto"
                     >
-                      Get Started
+                      Enroll Now
                     </Button>
                   </Link>
-                  <Link href="/contact">
+                  <Link href="/services">
                   <Button
                     size="lg"
                     className="bg-white border-2 border-cybernovr-purple text-cybernovr-purple hover:bg-cybernovr-purple/10 transition-all w-full sm:w-auto"
