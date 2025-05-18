@@ -60,7 +60,7 @@ export default function Home() {
     { value: "500+", label: "Clients Protected" },
     { value: "99.9%", label: "Uptime Guarantee" },
     { value: "24/7", label: "Support Available" },
-    { value: "100+", label: "Security Experts" },
+    { value: "10+", label: "Security Experts" },
   ];
 
   return (
