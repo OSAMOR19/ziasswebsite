@@ -11,7 +11,7 @@ import logo from "@/components/images/Cybernovrlogosmall.png"
 const mainNavItems = [
   {
     title: "Our services",
-    href: "/services",
+    href: "",
     submenu: [
       { title: "Professional Services", href: "/services/professional-services" },
       { title: "GRC", href: "/services/grc" },
