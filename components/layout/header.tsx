@@ -124,9 +124,7 @@ export default function Header() {
 
           {/* Search and CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <button aria-label="Search" className="text-charcoal hover:text-cybernovr-purple transition-colors duration-200">
-              <Search className="h-5 w-5" />
-            </button>
+            
             <Button className="bg-cybernovr-purple text-white hover:bg-cybernovr-purple/90">
               Contact Us
             </Button>

@@ -356,26 +356,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20">
-        <div className="container-custom">
-          <FadeIn direction="up">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                What Our Clients Say
-              </h2>
-              <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-                Hear from organizations that have transformed their security
-                posture with CYBERNOVR .
-              </p>
-            </div>
-          </FadeIn>
-
-          <FadeIn direction="up" delay={0.2}>
-            <TestimonialSlider />
-          </FadeIn>
-        </div>
-      </section>
+  
+      
 
       {/* CTA Section */}
       <section className="py-16 bg-white text-charcoal relative overflow-hidden">
