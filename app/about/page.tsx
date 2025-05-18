@@ -85,10 +85,6 @@ export default function AboutPage() {
             <h1 className="text-4xl text-black md:text-5xl font-bold mb-6">
               About cybernovr
             </h1>
-            <p className="text-xl text-black">
-              Leading the way in cybersecurity solutions to protect businesses
-              in an evolving threat landscape.
-            </p>
           </div>
         </div>
       </section>
