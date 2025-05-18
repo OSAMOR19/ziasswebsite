@@ -102,16 +102,7 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
-              <li>
-                <Link href="/products" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
-                  Products
-                </Link>
-              </li>
-              <li>
-                <Link href="/initiatives" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
-                  Initiatives
-                </Link>
-              </li>
+             
               <li>
                 <Link href="/contact" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
                   Contact

@@ -271,7 +271,7 @@ export default function EducationPage() {
               Join us in developing the next generation of cybersecurity professionals through education and training.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link href="/contact">
+              <Link href="/courses">
                 <Button
                   size="lg"
                   className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"
