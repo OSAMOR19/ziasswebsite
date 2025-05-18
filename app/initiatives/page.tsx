@@ -100,23 +100,16 @@ export default function InitiativesPage() {
                   <h3 className="text-xl font-bold mb-2">{event.title}</h3>
                   <div className="text-charcoal/70 mb-4">{event.location}</div>
                   <p className="text-charcoal/80 mb-6">{event.description}</p>
+                  <Link href="/contact">
                   <Button variant="outline" className="w-full">
                     Register Now
                   </Button>
+                  </Link>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Link
-              href="/events"
-              className="inline-flex items-center text-electric-blue hover:text-deep-blue font-medium transition-colors"
-            >
-              View All Events
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </div>
         </div>
       </section>
 
