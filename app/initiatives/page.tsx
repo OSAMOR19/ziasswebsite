@@ -110,13 +110,13 @@ export default function InitiativesPage() {
               },
               {
                 quote:
-                  "ZIASS's awareness campaign at our company significantly improved our employees' security practices and helped us build a stronger security culture.",
+                  "Cybernovr's awareness campaign at our company significantly improved our employees' security practices and helped us build a stronger security culture.",
                 author: "Michael T.",
                 title: "IT Director",
               },
               {
                 quote:
-                  "The training program provided by ZIASS was comprehensive and practical. I was able to apply what I learned immediately in my role as a security analyst.",
+                  "The training program provided by Cybernovr was comprehensive and practical. I was able to apply what I learned immediately in my role as a security analyst.",
                 author: "David L.",
                 title: "Security Analyst",
               },
@@ -202,7 +202,7 @@ export default function InitiativesPage() {
               {
                 title: "Security Professional Certification Course",
                 date: "August 5-26, 2025",
-                location: "ZIASS Training Center",
+                location: "Cybernovr Training Center",
                 description: "Comprehensive training program for aspiring security professionals.",
               },
             ].map((event, index) => (

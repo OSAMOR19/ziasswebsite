@@ -8,9 +8,8 @@ import Kazem from "@/components/images/kazeem.png";
 import Tiyamiyu from "@/components/images/tiyamiyu.jpg"
 import Tunde from "@/components/images/tundeali.jpg"
 import Olisa from "@/components/images/olisaemeka.jpg"
-import Ibrahim from "@/components/images/ibrahim.jpg"
+import Ibrahim from "@/components/images/ibrahimnew.jpg"
 import About1 from "@/components/images/abouttech1.jpeg";
-import About2 from "@/components/images/ziasslogo.jpg";
 
 export default function AboutPage() {
   const boardMembers = [
@@ -26,7 +25,7 @@ export default function AboutPage() {
       bio: "Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations. He holds a Ph.D in Information Systems and Business from the University of Ibadan.",
       image: Kazem,
       fullBio:
-        "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of ZIASS Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).",
+        "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of cybernovr Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).",
     },
     {
       name: "Dr. Tunde Ali",
@@ -36,36 +35,36 @@ export default function AboutPage() {
       fullBio:
         "Dr. Tunde Alli is a first-class medical professional with over 17 years of medical practice in Nigeria, South Africa, Australia, and Canada. He is Consultant Anesthesia, Consultant Family Practice. His specialties include pain management, family practice, medical IT services, and internet marketing.",
     },
-    {
-      name: "Eng. Gbolahan Oshonubi",
-      title: "Non-Executive Director",
-      bio: "Bringing engineering expertise to guide the strategic direction of ZIASS.",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: "Mrs.",
-      title: "Board Member",
-      bio: "Contributing valuable insights to the governance of ZIASS.",
-      image: "/placeholder.svg?height=300&width=300",
-    },
+    // {
+    //   name: "Eng. Gbolahan Oshonubi",
+    //   title: "Non-Executive Director",
+    //   bio: "Bringing engineering expertise to guide the strategic direction of cybernovr.",
+    //   image: "/placeholder.svg?height=300&width=300",
+    // },
+    // {
+    //   name: "Mrs.",
+    //   title: "Board Member",
+    //   bio: "Contributing valuable insights to the governance of cybernovr.",
+    //   image: "/placeholder.svg?height=300&width=300",
+    // },
   ];
 
   const managementTeam = [
     {
       name: "Dr. Kazeem Durodoye",
       title: "CEO",
-      bio: "Leading ZIASS with over 30 years of ICT experience across various sectors.",
+      bio: "Leading cybernovr with over 30 years of ICT experience across various sectors.",
       image: Kazem,
       fullBio:
-        "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of ZIASS Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).",
+        "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of cybernovr Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).",
     },
     {
       name: "Mr. Ibrahim Oladeji",
       title: "CFO",
-      bio: "An IT professional with over a decade of experience building solutions for various sectors.",
+      bio: "An accomplished technology leader with almost 2 decades of experience in digital transformation.",
       image: Ibrahim,
       fullBio:
-        "Oladeji Oluwaseyi Ibraaheem is an IT professional with over a decade of experience. He has worked in several organizations and built IT solutions for various sectors. He has extensive experience leading IT teams and projects toward achieving efficiency and client satisfaction.",
+        "Oladeji Oluwaseyi Ibrahim is an accomplished technology leader with almost 2 decades of experience architecting and implementing enterprise-level digital transformation, ERP systems, and operational efficiency frameworks across public and private sectors in Nigeria. He brings hands-on experience in mission-critical digital infrastructure projects with a proven record of delivering results in complex environments. Core Competencies: Strategic IT Planning & Execution, Business Process Automation, ERP Design & Implementation, Lean & Data-Driven Digital Transformation, Multi-Stakeholder Systems Integration, Dashboard & Analytics Development. Certifications & Qualifications: 2 Bachelor's Degrees in Computer Science & Psychology, MBA, Master's in Information Science, PMP, CISA, COBIT5. Expert in aligning IT with strategic business goals for tangible, measurable impact.",
     },
     {
       name: "Olisa Okafor",
@@ -82,7 +81,7 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl text-black md:text-5xl font-bold mb-6">
-              About ZIASS
+              About cybernovr
             </h1>
             <p className="text-xl text-black">
               Leading the way in cybersecurity solutions to protect businesses
@@ -99,10 +98,10 @@ export default function AboutPage() {
             <div className="space-y-6 w-full">
               <div className="mb-4 w-full">
                 <div className="relative w-full h-65 rounded-lg overflow-hidden shadow-lg mb-4">
-                  <Image src={About1} alt="ZIASS Mission" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" />
+                  <Image src={About1} alt="cybernovr Mission" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" />
                 </div>
                 <div className="relative w-full h-50 rounded-lg overflow-hidden shadow-lg">
-                  {/* <Image src={About2} alt="ZIASS Vision" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" /> */}
+                  {/* <Image src={About2} alt="cybernovr Vision" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" /> */}
                 </div>
               </div>
             </div>
@@ -132,7 +131,7 @@ export default function AboutPage() {
                   Our business philosophy is deeply rooted in our unflinching
                   belief that “Nothing's impossible”. We only need to “Keep
                   Thinking”! This has been the drive behind the innovations we
-                  come up with at ZIASS Limited. Our employees have passed
+                  come up with at cybernovr Limited. Our employees have passed
                   through the special training module designed to engrain the
                   Philosophy of “nothing is impossible”. Come, and have a taste
                   of the possibility by challenging us.
@@ -194,7 +193,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Team</h2>
             <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-              Meet the experts behind ZIASS who are dedicated to protecting your
+              Meet the experts behind cybernovr who are dedicated to protecting your
               organization from cyber threats.
             </p>
           </div>
@@ -269,7 +268,7 @@ export default function AboutPage() {
                   <p className="mb-4">
                     Kazeem Durodoye has over 30 years of ICT experience in
                     public, private, and development organizations. Kazeem is
-                    presently the Chief Executive Officer of ZIASS Nigeria
+                    presently the Chief Executive Officer of cybernovr Nigeria
                     Limited. From 2013 to 2016, Dr. Durodoye was the Group
                     Executive Director in charge of Technology and New Media at
                     LEADERSHIP Newspapers Limited.
@@ -310,7 +309,7 @@ export default function AboutPage() {
 
           <div className="relative">
             {/* Timeline line - visible on larger screens */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-ziass-green/20 hidden md:block"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-cybernovr-green/20 hidden md:block"></div>
 
             <div className="space-y-12">
               {[
@@ -318,7 +317,7 @@ export default function AboutPage() {
                   year: "2015",
                   title: "Company Founded",
                   description:
-                    "ZIASS was founded with a mission to provide accessible cybersecurity solutions to businesses of all sizes.",
+                    "cybernovr was founded with a mission to provide accessible cybersecurity solutions to businesses of all sizes.",
                   isLeft: true,
                 },
                 {
@@ -346,7 +345,7 @@ export default function AboutPage() {
                   year: "2023",
                   title: "Global Expansion",
                   description:
-                    "ZIASS expanded operations to serve clients across multiple regions, becoming a global security provider.",
+                    "cybernovr expanded operations to serve clients across multiple regions, becoming a global security provider.",
                   isLeft: true,
                 },
               ].map((event, index) => (
@@ -362,10 +361,10 @@ export default function AboutPage() {
                     }`}
                   >
                     {/* Timeline dot - visible on larger screens */}
-                    <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-6 h-6 rounded-full bg-ziass-green border-4 border-white hidden md:block"></div>
+                    <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-6 h-6 rounded-full bg-cybernovr-green border-4 border-white hidden md:block"></div>
 
                     {/* Mobile year indicator */}
-                    <div className="bg-ziass-green text-white font-bold py-1 px-4 rounded-full inline-block mb-2 md:hidden">
+                    <div className="bg-cybernovr-green text-white font-bold py-1 px-4 rounded-full inline-block mb-2 md:hidden">
                       {event.year}
                     </div>
 
@@ -378,7 +377,7 @@ export default function AboutPage() {
                     >
                       <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
                         {/* Desktop year indicator */}
-                        <div className="text-ziass-green font-bold text-xl mb-2 hidden md:block">
+                        <div className="text-cybernovr-green font-bold text-xl mb-2 hidden md:block">
                           {event.year}
                         </div>
                         <h3 className="text-xl font-bold mb-2">

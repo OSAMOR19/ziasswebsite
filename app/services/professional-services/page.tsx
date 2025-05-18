@@ -178,14 +178,14 @@ export default function ProfessionalServicesPage() {
                     </div>
                     <Button
                       type="submit"
-                      className="w-full bg-ziass-green hover:bg-ziass-green/90 text-white"
+                      className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
                     >
                       Send Message
                     </Button>
                   </form>
                 </div>
                 <div className="bg-light-gray rounded-lg p-6 shadow-md">
-                  <h3 className="text-xl font-bold mb-4">Why Choose ZIASS?</h3>
+                  <h3 className="text-xl font-bold mb-4">Why Choose Cybernovr?</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
@@ -245,7 +245,7 @@ export default function ProfessionalServicesPage() {
             <Link href="/courses">
               <Button
                 size="lg"
-                className="bg-ziass-gold hover:bg-ziass-gold/90 text-white"
+                className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"
               >
                 Get Started
               </Button>

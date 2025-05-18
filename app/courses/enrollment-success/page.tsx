@@ -58,7 +58,7 @@ export default function EnrollmentSuccess() {
             <div className="bg-white rounded-lg shadow-md p-8 text-center">
               {status === 'loading' && (
                 <div className="py-8">
-                  <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-ziass-green mx-auto"></div>
+                  <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-cybernovr-purple mx-auto"></div>
                   <h2 className="text-2xl font-bold mt-6 mb-2">Verifying Payment</h2>
                   <p className="text-gray-600">Please wait while we verify your payment...</p>
                 </div>
@@ -96,7 +96,7 @@ export default function EnrollmentSuccess() {
                   </p>
                   <Button
                     onClick={() => router.push('/courses')}
-                    className="bg-ziass-green hover:bg-ziass-green/90 text-white"
+                    className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
                   >
                     Return to Courses
                   </Button>
@@ -115,14 +115,14 @@ export default function EnrollmentSuccess() {
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button
                       onClick={() => router.push('/courses/enroll')}
-                      className="bg-ziass-green hover:bg-ziass-green/90 text-white"
+                      className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
                     >
                       Try Again
                     </Button>
                     <Button
                       onClick={() => router.push('/contact')}
                       variant="outline"
-                      className="border-ziass-green text-ziass-green hover:bg-ziass-green/10"
+                      className="border-cybernovr-purple text-cybernovr-purple hover:bg-cybernovr-purple/10"
                     >
                       Contact Support
                     </Button>

@@ -1,6 +1,6 @@
-# ZIASS Cybersecurity Website
+# Cybernovr Cybersecurity Website
 
-A production-ready, component-based website for the cybersecurity brand ZIASS, built with Next.js and Tailwind CSS.
+A production-ready, component-based website for the cybersecurity brand Cybernovr, built with Next.js and Tailwind CSS.
 
 ## Features
 
@@ -20,8 +20,8 @@ A production-ready, component-based website for the cybersecurity brand ZIASS, b
 
 ## Project Structure
 
-\`\`\`
-ziass-website/
+```
+cybernovr-website/
 ├── app/                  # Next.js App Router pages
 │   ├── about/            # About page
 │   ├── contact/          # Contact page
@@ -49,7 +49,7 @@ ziass-website/
 ├── package.json          # Project dependencies
 ├── tailwind.config.ts    # Tailwind CSS configuration
 └── tsconfig.json         # TypeScript configuration
-\`\`\`
+```
 
 ## Getting Started
 
@@ -61,39 +61,39 @@ ziass-website/
 ### Installation
 
 1. Clone the repository:
-\`\`\`bash
-git clone https://github.com/your-username/ziass-website.git
-cd ziass-website
-\`\`\`
+```bash
+git clone https://github.com/your-username/cybernovr-website.git
+cd cybernovr-website
+```
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
 # or
 yarn install
-\`\`\`
+```
 
 3. Create a `.env.local` file based on `.env.example`:
-\`\`\`bash
+```bash
 cp .env.example .env.local
-\`\`\`
+```
 
 4. Start the development server:
-\`\`\`bash
+```bash
 npm run dev
 # or
 yarn dev
-\`\`\`
+```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the website.
 
 ## Building for Production
 
-\`\`\`bash
+```bash
 npm run build
 # or
 yarn build
-\`\`\`
+```
 
 ## Deployment
 
@@ -108,11 +108,11 @@ The project is configured for easy deployment on Vercel:
 
 Run tests with:
 
-\`\`\`bash
+```bash
 npm run test
 # or
 yarn test
-\`\`\`
+```
 
 ## Accessibility
 

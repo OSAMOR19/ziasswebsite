@@ -18,8 +18,11 @@ const config: Config = {
     },
     extend: {
       colors: {
-        "ziass-green": "#00582E",
-        "ziass-gold": "#D4AF37",
+        "cybernovr-purple": "#662F8E",
+        "cybernovr-red": "#EB2027",
+        "cybernovr-blue": "#4451A2",
+        "cybernovr-black": "#000000",
+        "cybernovr-darkgray": "#1A1A1A",
         "light-gray": "#F5F7FA",
         charcoal: "#2C2C2C",
         border: "hsl(var(--border))",
@@ -28,12 +31,12 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#662F8E",
+          foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#EB2027",
+          foreground: "#FFFFFF",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -44,8 +47,8 @@ const config: Config = {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "#4451A2",
+          foreground: "#FFFFFF",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",

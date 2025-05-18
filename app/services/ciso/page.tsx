@@ -166,7 +166,7 @@ export default function CISOPage() {
                         placeholder="How can we help you?"
                       ></textarea>
                     </div>
-                    <Button type="submit" className="w-full bg-ziass-green hover:bg-ziass-green/90 text-white">
+                    <Button type="submit" className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white">
                       Send Message
                     </Button>
                   </form>
@@ -243,7 +243,7 @@ export default function CISOPage() {
             <Link href="/courses">
               <Button
                 size="lg"
-                className="bg-ziass-gold hover:bg-ziass-gold/90 text-white"
+                className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"
               >
                 Get Started
               </Button>

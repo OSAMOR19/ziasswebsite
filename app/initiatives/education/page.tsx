@@ -33,7 +33,7 @@ export default function EducationPage() {
                 <p className="text-lg text-charcoal/80 mb-6">
                   We use this platform for generating and developing a pipeline of trained and qualified cybersecurity 
                   professionals across Africa. Interested in partnering with us, contact Dr. Kazeem Durodoye at 
-                  <a href="mailto:kazeem@ziass.ca" className="text-electric-blue hover:underline"> kazeem@ziass.ca</a>
+                  <a href="mailto:kazeem@cybernovr.com" className="text-electric-blue hover:underline"> kazeem@cybernovr.com</a>
                 </p>
               </div>
 
@@ -50,7 +50,7 @@ export default function EducationPage() {
                 </p>
                 <p className="text-charcoal/80 mb-6">
                   To enrol your school in CYL, please email 
-                  <a href="mailto:kazeem@ziass.ca" className="text-electric-blue hover:underline"> kazeem@ziass.ca</a>
+                  <a href="mailto:kazeem@cybernovr.com" className="text-electric-blue hover:underline"> kazeem@cybernovr.com</a>
                 </p>
                 
               </div>
@@ -151,7 +151,7 @@ export default function EducationPage() {
                         placeholder="Tell us about your school and interest in the Cybersecurity Youth League"
                       ></textarea>
                     </div>
-                    <Button type="submit" className="w-full bg-ziass-green hover:bg-ziass-green/90 text-white">
+                    <Button type="submit" className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white">
                       Submit Enrollment Request
                     </Button>
                   </form>
@@ -253,7 +253,7 @@ export default function EducationPage() {
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="text-electric-blue text-4xl font-serif mb-4">"</div>
               <p className="text-charcoal/80 italic mb-6">
-                Partnering with ZIASS to develop our cybersecurity curriculum has significantly enhanced our 
+                Partnering with Cybernovr to develop our cybersecurity curriculum has significantly enhanced our 
                 educational offerings and attracted more students to our technology programs.
               </p>
               <div>
@@ -277,12 +277,12 @@ export default function EducationPage() {
               <Link href="/contact">
                 <Button
                   size="lg"
-                  className="bg-ziass-gold hover:bg-ziass-gold/90 text-white"
+                  className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"
                 >
                   Enroll Your School
                 </Button>
               </Link>
-              <Link href="mailto:kazeem@ziass.ca">
+              <Link href="mailto:kazeem@cybernovr.com">
                 <Button
                   size="lg"
                   variant="outline"

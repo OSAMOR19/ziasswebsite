@@ -30,28 +30,28 @@ export default function Home() {
       title: "Professional Services",
       description:
         "Expert cybersecurity consulting tailored to your business needs.",
-      icon: <Shield className="h-10 w-10 text-ziass-green" />,
+      icon: <Shield className="h-10 w-10 text-cybernovr-red" />,
       href: "/services/professional-services",
     },
     {
       title: "Risk Management",
       description:
         "Identify, assess, and mitigate security risks to protect your assets.",
-      icon: <Lock className="h-10 w-10 text-ziass-green" />,
+      icon: <Lock className="h-10 w-10 text-cybernovr-red" />,
       href: "/services/risk-management",
     },
     {
       title: "Penetration Testing",
       description:
         "Proactive security testing to identify vulnerabilities before attackers do.",
-      icon: <Server className="h-10 w-10 text-ziass-green" />,
+      icon: <Server className="h-10 w-10 text-cybernovr-red" />,
       href: "/services/penetration-testing",
     },
     {
       title: "CISO/vCISO",
       description:
         "Strategic security leadership without the full-time executive cost.",
-      icon: <Users className="h-10 w-10 text-ziass-green" />,
+      icon: <Users className="h-10 w-10 text-cybernovr-red" />,
       href: "/services/ciso",
     },
   ];
@@ -66,21 +66,21 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-24 lg:pt-32 pb-16 bg-gradient-to-r from-ziass-green to-ziass-green/80 text-white relative overflow-hidden">
-        <AnimatedBackground className="opacity-30" />
+      <section className="pt-24 lg:pt-32 pb-16 bg-white text-charcoal relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-light-gray to-white opacity-70 z-0"></div>
         <div className="container-custom relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <FadeIn direction="up" duration={0.7}>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   <AnimatedText
-                    text="Secure Your Digital Future with ZIASS"
+                    text="Secure Your Digital Future with Cybernovr"
                     type="words"
                   />
                 </h1>
               </FadeIn>
               <FadeIn direction="up" delay={0.2} duration={0.7}>
-                <p className="text-xl text-gray-200">
+                <p className="text-xl text-charcoal/80">
                   Comprehensive cybersecurity solutions to protect your business
                   from evolving threats.
                 </p>
@@ -90,14 +90,14 @@ export default function Home() {
                   <Link href="/courses">
                     <Button
                       size="lg"
-                      className="bg-ziass-gold hover:bg-ziass-gold/90 text-white"
+                      className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
                     >
                       Get Started
                     </Button>
                   </Link>
                   <Button
                     size="lg"
-                    className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
+                    className="bg-white border-2 border-cybernovr-purple text-cybernovr-purple hover:bg-cybernovr-purple/10 transition-all"
                   >
                     Learn More
                   </Button>
@@ -144,7 +144,7 @@ export default function Home() {
             <div className="text-center mt-12">
               <Link
                 href="/services"
-                className="inline-flex items-center text-ziass-green hover:text-ziass-gold font-medium transition-colors group"
+                className="inline-flex items-center text-cybernovr-blue hover:text-cybernovr-purple font-medium transition-colors group"
               >
                 View All Services
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -162,7 +162,7 @@ export default function Home() {
               <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={Aboutimg}
-                  alt="About ZIASS"
+                  alt="About Cybernovr"
                   fill
                   className="object-cover"
                 />
@@ -170,10 +170,10 @@ export default function Home() {
             </FadeIn>
             <div className="space-y-6">
               <FadeIn direction="left">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">About ZIASS</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">About Cybernovr</h2>
                 <div className="space-y-4">
                   <p className="text-lg text-charcoal/80 truncate" id="about-text">
-                    At ZIASS, we place a strong priority on customer service. We understand the 
+                    At Cybernovr, we place a strong priority on customer service. We understand the 
                     critical importance of protecting your information assets today while securing 
                     your business for tomorrow.
                     <p className="text-lg text-charcoal/80">
@@ -189,7 +189,7 @@ export default function Home() {
                   </p>
 
                   </p>
-                  <button className="text-ziass-green hover:text-ziass-gold font-medium" onClick={() => {
+                  <button className="text-cybernovr-blue hover:text-cybernovr-purple font-medium" onClick={() => {
                     const textElement = document.getElementById('about-text');
                     if (textElement) {
                       textElement.classList.toggle('truncate');
@@ -199,11 +199,11 @@ export default function Home() {
                   </button>
                   
                   <div className="pt-2">
-                    <p className="text-md font-medium text-ziass-green">
+                    <p className="text-md font-medium text-cybernovr-blue">
                       For direct assistance, contact our CEO:
                     </p>
                     <p className="text-md">
-                      Dr. Kazeem Durodoye | <span className="text-ziass-green">+2348051200000</span> | <span className="text-ziass-green">kazeem@ziass.ca</span>
+                      Dr. Kazeem Durodoye | <span className="text-cybernovr-blue">+2348051200000</span> | <span className="text-cybernovr-blue">kazeem@cybernovr.com</span>
                     </p>
                   </div>
                 </div>
@@ -218,7 +218,7 @@ export default function Home() {
                     "Customized security solutions",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
-                      <CheckCircle className="h-6 w-6 text-ziass-green mr-2 flex-shrink-0" />
+                      <CheckCircle className="h-6 w-6 text-cybernovr-red mr-2 flex-shrink-0" />
                       <span className="text-charcoal/90">{item}</span>
                     </li>
                   ))}
@@ -228,7 +228,7 @@ export default function Home() {
                 <Link href="/about">
                   <Button
                     size="lg"
-                    className="mt-4 bg-ziass-green hover:bg-ziass-green/90 text-white"
+                    className="mt-4 bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"
                   >
                     Learn More About Us
                   </Button>
@@ -240,9 +240,9 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-ziass-green text-white">
+      <section className="py-16 bg-cybernovr-purple ">
         <div className="container-custom">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 text-white md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <FadeIn key={index} delay={index * 0.1}>
                 <StatCard value={stat.value} label={stat.label} />
@@ -292,7 +292,7 @@ export default function Home() {
               },
             ].map((initiative, index) => (
               <FadeIn key={index} direction="up" delay={index * 0.2}>
-                <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-ziass-green/10 hover:-translate-y-1 duration-300">
+                <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-cybernovr-blue/10 hover:-translate-y-1 duration-300">
                   <div className="relative h-48">
                     <Image
                       src={initiative.image || "/placeholder.svg"}
@@ -310,7 +310,7 @@ export default function Home() {
                     </p>
                     <Link
                       href={initiative.href}
-                      className="text-ziass-green hover:text-ziass-gold font-medium inline-flex items-center group"
+                      className="text-cybernovr-blue hover:text-cybernovr-purple font-medium inline-flex items-center group"
                     >
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -364,7 +364,7 @@ export default function Home() {
               </h2>
               <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
                 Hear from organizations that have transformed their security
-                posture with ZIASS.
+                posture with Cybernovr.
               </p>
             </div>
           </FadeIn>
@@ -376,8 +376,8 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-ziass-green to-ziass-green/80 text-white relative overflow-hidden">
-        <AnimatedBackground className="opacity-20" />
+      <section className="py-16 bg-white text-charcoal relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-light-gray to-white opacity-70 z-0"></div>
         <div className="container-custom relative z-10">
           <FadeIn direction="up">
             <div className="text-center max-w-3xl mx-auto">
@@ -386,18 +386,18 @@ export default function Home() {
               </h2>
               <p className="text-xl mb-8">
                 Contact us today for a free security assessment and discover how
-                ZIASS can protect your organization.
+                Cybernovr can protect your organization.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Button
                   size="lg"
-                  className="bg-ziass-gold text-white hover:bg-ziass-gold/90"
+                  className="bg-cybernovr-purple text-white hover:bg-cybernovr-purple/90"
                 >
                   Contact Us
                 </Button>
                 <Button
                   size="lg"
-                  className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
+                  className="bg-white border-2 border-cybernovr-purple text-cybernovr-purple hover:bg-cybernovr-purple/10 transition-all"
                 >
                   Learn More
                 </Button>

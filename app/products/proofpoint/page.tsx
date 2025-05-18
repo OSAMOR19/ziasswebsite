@@ -226,7 +226,7 @@ export default function ProofpointPage() {
                         placeholder="Tell us about your email security needs"
                       ></textarea>
                     </div>
-                    <Button type="submit" className="w-full bg-ziass-green hover:bg-ziass-green/90 text-white">
+                    <Button type="submit" className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white">
                       Send Request
                     </Button>
                   </form>
@@ -303,7 +303,7 @@ export default function ProofpointPage() {
             <Link href="/contact">
               <Button
                 size="lg"
-                className="bg-ziass-gold hover:bg-ziass-gold/90 text-white"
+                className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"
               >
                 Contact Us
               </Button>

@@ -118,7 +118,7 @@ export default function EnrollPage() {
           <div className="max-w-2xl mx-auto">
             <button
               onClick={() => router.back()}
-              className="flex items-center text-ziass-green hover:text-ziass-gold mb-6 transition-colors"
+              className="flex items-center text-cybernovr-purple hover:text-cybernovr-purple/90 mb-6 transition-colors"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Courses
@@ -132,7 +132,7 @@ export default function EnrollPage() {
                 <div className="flex items-center">
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                      step >= 1 ? "bg-ziass-green text-white" : "bg-gray-200 text-gray-500"
+                      step >= 1 ? "bg-cybernovr-purple text-white" : "bg-gray-200 text-gray-500"
                     }`}
                   >
                     1
@@ -143,7 +143,7 @@ export default function EnrollPage() {
                 <div className="flex items-center">
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                      step >= 2 ? "bg-ziass-green text-white" : "bg-gray-200 text-gray-500"
+                      step >= 2 ? "bg-cybernovr-purple text-white" : "bg-gray-200 text-gray-500"
                     }`}
                   >
                     2
@@ -282,7 +282,7 @@ export default function EnrollPage() {
                       required
                     />
                     <Label htmlFor="schoolConsent" className="text-sm">
-                      Consent of School: I consent to the student of my school to join the Cybersecurity Youth League of ZIASS Limited in line with the terms and conditions
+                      Consent of School: I consent to the student of my school to join the Cybersecurity Youth League of CYBERNOVR Limited in line with the terms and conditions
                     </Label>
                   </div>
 
@@ -296,14 +296,14 @@ export default function EnrollPage() {
                       required
                     />
                     <Label htmlFor="parentConsent" className="text-sm">
-                      Consent of Parent: I consent to the student of my school to join the Cybersecurity Youth League of ZIASS Limited in line with the terms and conditions
+                      Consent of Parent: I consent to the student of my school to join the Cybersecurity Youth League of CYBERNOVR Limited in line with the terms and conditions
                     </Label>
                   </div>
 
                   <div className="pt-4">
                     <Button
                       type="submit"
-                      className="w-full bg-ziass-green hover:bg-ziass-green/90 text-white"
+                      className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white text-lg py-6 font-medium shadow-lg"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? "Processing..." : "Continue to Payment"}
@@ -343,7 +343,7 @@ export default function EnrollPage() {
                           value="paystack"
                           checked
                           readOnly
-                          className="h-4 w-4 text-ziass-green"
+                          className="h-4 w-4 text-cybernovr-purple"
                         />
                         <label htmlFor="paystack" className="ml-2">
                           Pay with Paystack
@@ -359,7 +359,7 @@ export default function EnrollPage() {
                       <div className="pt-4">
                         <Button
                           onClick={initiatePayment}
-                          className="w-full bg-ziass-green hover:bg-ziass-green/90 text-white"
+                          className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white text-lg py-6 font-medium shadow-lg"
                           disabled={isSubmitting}
                         >
                           {isSubmitting ? "Processing Payment..." : `Pay ${formatPrice(course.price)}`}
@@ -372,7 +372,7 @@ export default function EnrollPage() {
                       <button
                         type="button"
                         onClick={() => setStep(1)}
-                        className="text-ziass-green hover:text-ziass-gold text-sm w-full text-center mt-4"
+                        className="text-cybernovr-purple hover:text-cybernovr-purple/90 text-sm w-full text-center mt-4"
                       >
                         Return to previous step
                       </button>

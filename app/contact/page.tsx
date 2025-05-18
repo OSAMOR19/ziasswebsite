@@ -37,8 +37,8 @@ export default function ContactPage() {
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="ZIASS Office Location"
-                aria-label="Map showing ZIASS office location at Febson Mall, Wuse Zone 4, Abuja"
+                title="cybernovr Office Location"
+                aria-label="Map showing cybernovr office location at Febson Mall, Wuse Zone 4, Abuja"
               ></iframe>
             </div>
           </div>
@@ -58,9 +58,9 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto space-y-6">
             {[
               {
-                question: "What services does ZIASS offer?",
+                question: "What services does cybernovr offer?",
                 answer:
-                  "ZIASS offers a comprehensive range of cybersecurity services, including professional consulting, risk management, penetration testing, incident response, compliance, and virtual CISO services. We tailor our solutions to meet the specific needs of your organization.",
+                  "cybernovr offers a comprehensive range of cybersecurity services, including professional consulting, risk management, penetration testing, incident response, compliance, and virtual CISO services. We tailor our solutions to meet the specific needs of your organization.",
               },
               {
                 question: "How can I request a security assessment?",

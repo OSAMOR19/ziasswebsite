@@ -19,7 +19,7 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "ZIASS - Cybersecurity Solutions",
+  title: "Cybernovr - Cybersecurity Solutions",
   description: "Professional cybersecurity services and solutions for businesses of all sizes.",
     generator: 'v0.dev'
 }

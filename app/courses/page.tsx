@@ -21,7 +21,7 @@ export default function CoursesPage() {
       price: 25950,
       duration: "4 weeks",
       level: "Beginner",
-      icon: <Shield className="h-12 w-12 text-ziass-green" />,
+      icon: <Shield className="h-12 w-12 text-cybernovr-purple" />,
       image: course3,
     },
     {
@@ -32,7 +32,7 @@ export default function CoursesPage() {
       price: 25950,
       duration: "6 weeks",
       level: "Intermediate",
-      icon: <BookOpen className="h-12 w-12 text-ziass-green" />,
+      icon: <BookOpen className="h-12 w-12 text-cybernovr-purple" />,
       image: course1,
     },
     {
@@ -43,7 +43,7 @@ export default function CoursesPage() {
       price: 25950,
       duration: "8 weeks",
       level: "Advanced",
-      icon: <Award className="h-12 w-12 text-ziass-green" />,
+      icon: <Award className="h-12 w-12 text-cybernovr-purple" />,
       image: course2,
     },
   ]
@@ -51,15 +51,15 @@ export default function CoursesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-r from-ziass-green to-ziass-green/80 text-white relative overflow-hidden">
+      <section className="pt-32 pb-16 bg-gradient-to-r from-cybernovr-purple to-cybernovr-purple/80 text-white relative overflow-hidden">
         <AnimatedBackground className="opacity-30" />
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <FadeIn direction="up" duration={0.7}>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Cybersecurity Courses</h1>
+              <h1 className="text-4xl md:text-5xl text-white font-bold mb-6">Cybersecurity Courses</h1>
             </FadeIn>
             <FadeIn direction="up" delay={0.2} duration={0.7}>
-              <p className="text-xl text-gray-200 mb-8">
+              <p className="text-xl text-white mb-8">
                 Enhance your cybersecurity skills with our expert-led courses designed for professionals at all levels.
               </p>
             </FadeIn>
@@ -128,7 +128,7 @@ export default function CoursesPage() {
                   <FadeIn key={index} direction="left" delay={index * 0.1}>
                     <div className="flex">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-ziass-green flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-cybernovr-purple flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -146,7 +146,7 @@ export default function CoursesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-ziass-green to-ziass-green/80 text-white relative overflow-hidden">
+      <section className="py-16 bg-gradient-to-r from-cybernovr-purple to-cybernovr-purple/80 text-white relative overflow-hidden">
         <AnimatedBackground className="opacity-20" />
         <div className="container-custom relative z-10">
           <FadeIn direction="up">
@@ -158,7 +158,7 @@ export default function CoursesPage() {
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link href="/courses/enroll">
-                  <Button size="lg" className="bg-ziass-gold text-white hover:bg-ziass-gold/90">
+                  <Button size="lg" className="bg-cybernovr-purple text-white hover:bg-cybernovr-purple/90">
                     Enroll Now
                   </Button>
                 </Link>

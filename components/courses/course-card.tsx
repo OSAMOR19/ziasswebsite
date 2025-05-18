@@ -33,7 +33,7 @@ export default function CourseCard({ course }: CourseProps) {
 
   return (
     <motion.div
-      whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(0, 88, 46, 0.1)" }}
+      whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(102, 47, 142, 0.1)" }}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -42,7 +42,7 @@ export default function CourseCard({ course }: CourseProps) {
     >
       <div className="relative h-48">
         <Image src={course.image || "/placeholder.svg"} alt={course.title} fill className="object-cover" />
-        <div className="absolute top-4 right-4 bg-ziass-green text-white text-sm font-medium py-1 px-3 rounded-full">
+        <div className="absolute top-4 right-4 bg-cybernovr-purple text-white text-sm font-medium py-1 px-3 rounded-full">
           {formatPrice(course.price)}
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function CourseCard({ course }: CourseProps) {
         </div>
 
         <Link href={`/courses/enroll?course=${course.id}`}>
-          <Button className="w-full bg-ziass-green hover:bg-ziass-green/90 text-white">Enroll Now</Button>
+          <Button className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white">Enroll Now</Button>
         </Link>
       </div>
     </motion.div>

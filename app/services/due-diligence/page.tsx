@@ -282,7 +282,7 @@ export default function DueDiligencePage() {
                     </div>
                     <Button
                       type="submit"
-                      className="w-full bg-ziass-green hover:bg-ziass-green/90 text-white"
+                      className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
                     >
                       Send Message
                     </Button>
@@ -367,7 +367,7 @@ export default function DueDiligencePage() {
             <Link href="/courses">
               <Button
                 size="lg"
-                className="bg-ziass-gold hover:bg-ziass-gold/90 text-white"
+                className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
               >
                 Get Started
               </Button>

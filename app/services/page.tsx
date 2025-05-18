@@ -107,11 +107,10 @@ export default function ServicesPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold">Why Choose ZIASS?</h2>
-              <p className="text-lg text-charcoal/80">
-                At ZIASS, we understand that every organization has unique security challenges. Our approach combines
-                industry expertise, cutting-edge technology, and personalized service to deliver comprehensive security
-                solutions that protect your business.
+              <h2 className="text-3xl md:text-4xl font-bold">Why Choose Cybernovr?</h2>
+              <p className="text-lg text-charcoal/80 mt-4">
+                At Cybernovr, we understand that every organization has unique security challenges. Our approach combines
+                industry-leading expertise with cutting-edge technology to deliver comprehensive security solutions.
               </p>
 
               <div className="space-y-4 mt-8">
@@ -154,7 +153,7 @@ export default function ServicesPage() {
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/placeholder.svg?height=500&width=600"
-                alt="ZIASS Security Experts"
+                alt="Cybernovr Security Experts"
                 fill
                 className="object-cover"
               />
@@ -170,7 +169,7 @@ export default function ServicesPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Secure Your Business?</h2>
               <p className="text-xl mb-8">
-                Contact us today for a free security assessment and discover how ZIASS can protect your organization.
+                Contact us today for a free security assessment and discover how Cybernovr can protect your organization.
               </p>
               <Button size="lg" className="bg-accent-cyan hover:bg-accent-cyan/90 text-white">
                 Get Started

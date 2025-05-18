@@ -6,6 +6,7 @@ import Image from "next/image"
 import { Menu, X, ChevronDown, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import logo from "@/components/images/Cybernovrlogosmall.png"
 
 const mainNavItems = [
   {
@@ -73,7 +74,7 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white shadow-md py-2" : "bg-white/95 py-4",
+        isScrolled ? "bg-white shadow-md py-2" : "bg-white py-4",
       )}
     >
       <div className="container-custom">
@@ -81,9 +82,9 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="relative z-10">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ziasslogo.jpg-5msKUK2mXX21RUrHKmVz6SSqsfk7Tq.jpeg"
-              alt="ZIASS Logo"
-              width={120}
+              src={logo}
+              alt="Cybernovr Logo"
+              width={150}
               height={50}
               className="h-12 w-auto"
               priority
@@ -96,7 +97,7 @@ export default function Header() {
               <div key={item.title} className="relative group">
                 <Link
                   href={item.href}
-                  className="text-charcoal hover:text-ziass-green font-medium flex items-center transition-colors duration-200"
+                  className="text-charcoal hover:text-cybernovr-purple font-medium flex items-center transition-colors duration-200"
                 >
                   {item.title}
                   {item.submenu && <ChevronDown className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180" />}
@@ -109,7 +110,7 @@ export default function Header() {
                         <Link
                           key={subItem.title}
                           href={subItem.href}
-                          className="block px-4 py-2 text-sm text-charcoal hover:bg-light-gray hover:text-ziass-green"
+                          className="block px-4 py-2 text-sm text-charcoal hover:bg-light-gray hover:text-cybernovr-purple"
                         >
                           {subItem.title}
                         </Link>
@@ -123,10 +124,10 @@ export default function Header() {
 
           {/* Search and CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <button aria-label="Search" className="text-charcoal hover:text-ziass-green transition-colors duration-200">
+            <button aria-label="Search" className="text-charcoal hover:text-cybernovr-purple transition-colors duration-200">
               <Search className="h-5 w-5" />
             </button>
-            <Button className="bg-ziass-green text-white hover:bg-ziass-green/90 hover:border hover:border-ziass-gold">
+            <Button className="bg-cybernovr-purple text-white hover:bg-cybernovr-purple/90">
               Contact Us
             </Button>
           </div>
@@ -148,7 +149,7 @@ export default function Header() {
         <div className="container-custom pt-24 pb-8">
           <nav className="flex flex-col space-y-4">
             {mainNavItems.map((item) => (
-              <div key={item.title} className="border-b border-gray-100 pb-4">
+              <div key={item.title} className="border-b border-gray-200 pb-4">
                 {item.submenu ? (
                   <>
                     <button
@@ -166,7 +167,7 @@ export default function Header() {
                           <Link
                             key={subItem.title}
                             href={subItem.href}
-                            className="block py-2 text-charcoal/80 hover:text-ziass-green"
+                            className="block py-2 text-charcoal/80 hover:text-cybernovr-purple"
                             onClick={toggleMenu}
                           >
                             {subItem.title}
@@ -178,7 +179,7 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="block text-lg font-medium text-charcoal hover:text-ziass-green"
+                    className="block text-lg font-medium text-charcoal hover:text-cybernovr-purple"
                     onClick={toggleMenu}
                   >
                     {item.title}
@@ -192,11 +193,11 @@ export default function Header() {
               <input
                 type="text"
                 placeholder="Search..."
-                className="w-full py-3 pl-10 pr-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-ziass-gold"
+                className="w-full py-3 pl-10 pr-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-cybernovr-purple bg-light-gray text-charcoal"
               />
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
             </div>
-            <Button className="bg-ziass-green text-white hover:bg-ziass-green/90 hover:border hover:border-ziass-gold w-full">
+            <Button className="bg-cybernovr-purple text-white hover:bg-cybernovr-purple/90 w-full">
               Contact Us
             </Button>
           </div>

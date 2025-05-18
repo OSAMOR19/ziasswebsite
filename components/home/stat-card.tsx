@@ -15,10 +15,10 @@ export default function StatCard({ value, label }: StatCardProps) {
 
     return (
       <div className="text-center">
-        <div className="text-4xl md:text-5xl font-bold text-ziass-gold mb-2">
+        <div className="text-4xl md:text-5xl font-bold text-white mb-2">
           <AnimatedCounter end={numericValue} suffix={suffix} />
         </div>
-        <div className="text-lg text-white/80">{label}</div>
+        <div className="text-lg text-white">{label}</div>
       </div>
     )
   }
@@ -26,8 +26,8 @@ export default function StatCard({ value, label }: StatCardProps) {
   // Fallback for non-numeric values
   return (
     <div className="text-center">
-      <div className="text-4xl md:text-5xl font-bold text-ziass-gold mb-2">{value}</div>
-      <div className="text-lg text-white/80">{label}</div>
+      <div className="text-4xl md:text-5xl font-bold text-purple-500 mb-2">{value}</div>
+      <div className="text-lg text-white">{label}</div>
     </div>
   )
 }

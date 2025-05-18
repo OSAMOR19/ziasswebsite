@@ -15,18 +15,18 @@ interface ServiceCardProps {
 export default function ServiceCard({ title, description, icon, href }: ServiceCardProps) {
   return (
     <motion.div
-      whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(0, 88, 46, 0.1)" }}
+      whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(102, 47, 142, 0.1)" }}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="bg-white rounded-lg p-6 shadow-md transition-all duration-300"
+      className="bg-white rounded-lg p-6 shadow-md transition-all duration-300 border border-gray-100"
     >
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="mb-4"
+        className="mb-4 text-cybernovr-purple"
       >
         {icon}
       </motion.div>
@@ -34,7 +34,7 @@ export default function ServiceCard({ title, description, icon, href }: ServiceC
       <p className="text-charcoal/80 mb-4">{description}</p>
       <Link
         href={href}
-        className="inline-flex items-center text-ziass-green hover:text-ziass-gold font-medium transition-colors group"
+        className="inline-flex items-center text-cybernovr-purple hover:text-cybernovr-purple/80 font-medium transition-colors group"
       >
         Learn More
         <motion.div whileHover={{ x: 5 }} className="ml-2">

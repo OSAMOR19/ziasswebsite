@@ -220,7 +220,7 @@ export default function IncidentResponsePage() {
                         placeholder="How can we help you?"
                       ></textarea>
                     </div>
-                    <Button type="submit" className="w-full bg-ziass-green hover:bg-ziass-green/90 text-white">
+                    <Button type="submit" className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white">
                       Send Message
                     </Button>
                   </form>

@@ -171,7 +171,7 @@ export default function AwarenessPage() {
                         placeholder="How would you like to get involved?"
                       ></textarea>
                     </div>
-                    <Button type="submit" className="w-full bg-ziass-green hover:bg-ziass-green/90 text-white">
+                    <Button type="submit" className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white">
                       Submit
                     </Button>
                   </form>
@@ -255,7 +255,7 @@ export default function AwarenessPage() {
             <Link href="/contact">
               <Button
                 size="lg"
-                className="bg-ziass-gold hover:bg-ziass-gold/90 text-white"
+                className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
               >
                 Get Involved Today
               </Button>
