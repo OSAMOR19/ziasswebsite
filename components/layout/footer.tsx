@@ -123,6 +123,11 @@ export default function Footer() {
                   Events
                 </Link>
               </li>
+              <li>
+                <Link href="/courses" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+                 Enroll Now
+                </Link>
+              </li>
             </ul>
           </div>
 
