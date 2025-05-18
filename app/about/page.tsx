@@ -316,39 +316,74 @@ export default function AboutPage() {
             <div className="space-y-12">
               {[
                 {
-                  year: "2015",
-                  title: "Company Founded",
+                  year: "2008",
+                  title: "First Cybersecurity Workshop",
                   description:
-                    "cybernovr was founded with a mission to provide accessible cybersecurity solutions to businesses of all sizes.",
+                    "Co-Organised the first Cybersecurity Workshop in Nigeria.",
                   isLeft: true,
                 },
                 {
-                  year: "2017",
-                  title: "Expansion of Services",
+                  year: "2013",
+                  title: "National Cybersecurity Policy",
                   description:
-                    "We expanded our service offerings to include comprehensive risk management and compliance solutions.",
+                    "Developed the National Cybersecurity Policy and Strategy for the Office of National Security Adviser (ONSA).",
                   isLeft: false,
                 },
                 {
-                  year: "2019",
-                  title: "Launch of Cybersecurity Youth League",
+                  year: "2014",
+                  title: "Presidential Approval",
                   description:
-                    "We established the Cybersecurity Youth League to nurture the next generation of security professionals.",
+                    "The National Cybersecurity Policy and Strategy approved and signed by the President of Nigeria.",
+                  isLeft: true,
+                },
+                {
+                  year: "2018-2025",
+                  title: "Corporate Cybersecurity",
+                  description:
+                    "Developed Cybersecurity Governance and Strategy for Payment Systems companies, Banks and other corporate organisations.",
+                  isLeft: false,
+                },
+                {
+                  year: "2020",
+                  title: "Sectoral CSIRT",
+                  description:
+                    "Setup and operationalisation of the Sectoral CSIRT for the Communication Sector.",
                   isLeft: true,
                 },
                 {
                   year: "2021",
-                  title: "Strategic Partnerships",
+                  title: "eNaira Programme Management",
                   description:
-                    "We formed strategic partnerships with leading technology providers to enhance our security solutions.",
+                    "Developed the Programme Management framework for eNaira (incorporating Cybersecurity).",
                   isLeft: false,
                 },
                 {
-                  year: "2023",
-                  title: "Global Expansion",
+                  year: "2022",
+                  title: "ZIASS Limited Founded",
                   description:
-                    "cybernovr expanded operations to serve clients across multiple regions, becoming a global security provider.",
+                    "Incorporated ZIASS Limited. Rebranded as CYBERNOVR in May 2025.",
                   isLeft: true,
+                },
+                {
+                  year: "2023",
+                  title: "National CERT Collaboration",
+                  description:
+                    "Further cybersecurity works with the National CERT (ngCERT).",
+                  isLeft: false,
+                },
+                {
+                  year: "2024",
+                  title: "Digital Public Infrastructure",
+                  description:
+                    "Developed Digital Public Infrastructure (incorporating Cybersecurity Requirements) for all Nigerian States (a project of Nigerian Governors Forum).",
+                  isLeft: true,
+                },
+                {
+                  year: "2025",
+                  title: "Communication Sector Framework",
+                  description:
+                    "Developing Cybersecurity Framework for the Nigerian Communication Sector.",
+                  isLeft: false,
                 },
               ].map((event, index) => (
                 <FadeIn

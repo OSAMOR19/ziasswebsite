@@ -213,7 +213,7 @@ export default function DarktracePage() {
       <section className="py-16 bg-deep-blue text-black">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Strengthen Your Security with Darktrace</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Strengthen Your Cybersecurity Posture with Darktrace</h2>
             <p className="text-xl mb-8">
               Contact us today to learn how Darktrace's AI-powered security solutions can protect your organization.
             </p>
