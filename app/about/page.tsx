@@ -93,6 +93,19 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Company Overview */}
+      <section className="py-12 bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100">
+              <p className="text-lg text-charcoal/90 leading-relaxed">
+                Since 2008, CYBERNOVR has been a Cybersecurity organisation providing cybersecurity services in Governance, Risk and Compliance management. We have strong expertise in Critical Infrastructure (CI) protection, Digital Transformation and cybersecurity training. We have worked with Ministries, Departments, and Agencies of the Government of Nigeria in developing and implementing the National Cybersecurity Policy and Strategy as well developing cybersecurity frameworks for critical sectors. We also work with numerous private organisations in different verticals to secure and protect their information assets and thereby safeguarding their future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Vision */}
       <section className="py-20">
         <div className="container-custom">
