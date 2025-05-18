@@ -374,16 +374,18 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Button
+                asChild
                   size="lg"
                   className="bg-cybernovr-purple text-white hover:bg-cybernovr-purple/90"
                 >
-                  Contact Us
+                  <Link href="/contact">Contact Us</Link>
                 </Button>
                 <Button
+                asChild
                   size="lg"
                   className="bg-white border-2 border-cybernovr-purple text-cybernovr-purple hover:bg-cybernovr-purple/10 transition-all"
                 >
-                  Learn More
+                  <Link href="/products">Learn More</Link>
                 </Button>
               </div>
             </div>
