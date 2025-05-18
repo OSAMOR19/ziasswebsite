@@ -85,11 +85,11 @@ export default function Footer() {
                   Incident Response
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/services" className="text-cybernovr-purple hover:underline transition-colors font-medium">
                   View All Services
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
