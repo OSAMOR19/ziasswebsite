@@ -25,11 +25,11 @@ export default function Footer() {
               business from evolving cyber threats.
             </p>
             <div className="flex space-x-4">
-              <Link href="https://facebook.com" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+              <Link href="https://web.facebook.com/profile.php?id=61575904361487" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="https://twitter.com" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+              <Link href="https://x.com/CYBERNOVR" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
@@ -37,7 +37,7 @@ export default function Footer() {
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="https://instagram.com" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+              <Link href="https://www.instagram.com/cybernovr/" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
