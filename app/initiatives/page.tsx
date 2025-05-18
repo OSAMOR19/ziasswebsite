@@ -120,29 +120,7 @@ export default function InitiativesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-electric-blue to-accent-cyan text-white">
-        <div className="container-custom">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Mission</h2>
-            <p className="text-xl mb-8">
-              Together, we can build a more secure digital future through education, awareness, and community
-              engagement.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" className="bg-white text-electric-blue hover:bg-gray-100">
-                Contact Us
-              </Button>
-              <Button
-                    size="lg"
-                    className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
-                  >
-                    Learn More
-                  </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </>
   )
 }
