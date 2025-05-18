@@ -12,11 +12,10 @@ export default function ProfessionalServicesPage() {
         <div className="container-custom">
           <div className="max-w-3xl text-black mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Professional Services
+              Critical Infrastructure Protection
             </h1>
             <p className="text-xl mb-8">
-              We provide a range of professional cybersecurity services geared
-              towards providing resilience for your business.
+              Securing and enhancing the resilience of your critical information infrastructure.
             </p>
           </div>
         </div>
@@ -29,21 +28,16 @@ export default function ProfessionalServicesPage() {
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold mb-6">
-                  Our Professional Services
+                  Critical Information Infrastructure Protection
                 </h2>
                 <p className="text-lg text-charcoal/80 mb-6">
-                  We provide a range of professional cybersecurity services
-                  geared towards providing resilience for your business. These
-                  services are as important as the cybersecurity products you
-                  may have deployed to protect your information assets.
+                  Critical Information Infrastructure (CII) refers to the computer information systems, telecommunication networks, and the underlying flow of data within these systems, which if destroyed or disrupted could have a significant effect on the economic and social well-being of a company or country as well as the safety of staff and citizens respectively.
                 </p>
                 <p className="text-lg text-charcoal/80 mb-6">
-                  For example, a Cybersecurity Governance for your organisation
-                  will ensure that complementary cybersecurity policies,
-                  guidelines, and standards are in place to manage cybersecurity
-                  risks to your business. We will help you define the governance
-                  framework that sets a clear direction for coordinating efforts
-                  toward protecting a nation or organisation's critical assets.
+                  More and more attention are shifting from the protection of CIIs to making CIIs more resilient. We have worked with government and private organisations in developing a Business Impact Analysis (BIA) and developing sector-specific CII risk management and resiliency plans.
+                </p>
+                <p className="text-lg text-charcoal/80 mb-6">
+                  Contact us today to get more insight into how we help organisations to maintain the Confidentiality, Integrity, and Availability (CIA) of their critical information infrastructure.
                 </p>
               </div>
 
@@ -60,7 +54,7 @@ export default function ProfessionalServicesPage() {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-lg font-semibold">
-                        Cybersecurity Governance and Compliance Management
+                        Cybersecurity Framework for CII
                       </h4>
                     </div>
                   </li>
@@ -72,7 +66,7 @@ export default function ProfessionalServicesPage() {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-lg font-semibold">
-                        Cybersecurity Risk Management
+                        Cybersecurity Strategy for CII
                       </h4>
                     </div>
                   </li>
@@ -84,7 +78,7 @@ export default function ProfessionalServicesPage() {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-lg font-semibold">
-                        Cybersecurity Due Diligence
+                        Risk Management of CII
                       </h4>
                     </div>
                   </li>
