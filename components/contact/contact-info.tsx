@@ -50,8 +50,8 @@ export default function ContactInfo() {
           <div>
             <h3 className="text-lg font-bold">Email</h3>
             <p className="text-charcoal/80">
-              <a href="mailto:kazeem@zeemak.ca" className="hover:text-electric-blue transition-colors">
-                kazeem@zeemak.ca
+              <a href="mailto:kazeem@cybernovr.com" className="hover:text-electric-blue transition-colors">
+                kazeem@cybernovr.com
               </a>
             </p>
           </div>
