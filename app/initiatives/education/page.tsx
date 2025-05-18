@@ -218,47 +218,44 @@ export default function EducationPage() {
         </div>
       </section>
 
-      {/* Success Stories */}
+      {/* Successful Partnerships */}
       <section className="py-16 bg-light-gray">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Success Stories</h2>
+            <h2 className="text-3xl font-bold mb-4">Successful Partnerships</h2>
             <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-              Hear from students and schools who have benefited from our education and training programs.
+              Learn about our collaborative efforts with government, organizations, and educational institutions.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="text-electric-blue text-4xl font-serif mb-4">"</div>
               <p className="text-charcoal/80 italic mb-6">
-                The Cybersecurity Youth League has transformed how our students think about online safety. They're now 
-                more aware of potential threats and have developed valuable technical skills.
+                We have a no objection from Ministry of Education, Osun state to train all secondary Students in the State.
               </p>
               <div>
-                <h4 className="font-bold">Sarah Johnson</h4>
-                <p className="text-charcoal/70">Principal, Westview High School</p>
+                <h4 className="font-bold">Osun State Government</h4>
+                <p className="text-charcoal/70">Permanent Secretary, Ministry of Education</p>
               </div>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="text-electric-blue text-4xl font-serif mb-4">"</div>
               <p className="text-charcoal/80 italic mb-6">
-                Thanks to the internship program, I gained practical experience that helped me secure a job in 
-                cybersecurity right after graduation. The mentorship was invaluable.
+                We are partnering with Rotary Club of Lagos to train secondary School students in selected schools in the Rotary Intervention Programme.
               </p>
               <div>
-                <h4 className="font-bold">Michael Okonkwo</h4>
-                <p className="text-charcoal/70">Former Intern, Now Security Analyst</p>
+                <h4 className="font-bold">Rotary Club of Lagos</h4>
+                <p className="text-charcoal/70">Community Education Initiative</p>
               </div>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="text-electric-blue text-4xl font-serif mb-4">"</div>
               <p className="text-charcoal/80 italic mb-6">
-                Partnering with Cybernovr to develop our cybersecurity curriculum has significantly enhanced our 
-                educational offerings and attracted more students to our technology programs.
+                We partnered with AFSI to provide cybersecurity lectures to university students in Nigeria and Cameroon.
               </p>
               <div>
-                <h4 className="font-bold">Dr. Emmanuel Adebayo</h4>
-                <p className="text-charcoal/70">Department Head, Lagos Technical College</p>
+                <h4 className="font-bold">African Foundation for Systems Integration (AF4SI)</h4>
+                <p className="text-charcoal/70">Aligned with Capitol Technology University, USA</p>
               </div>
             </div>
           </div>

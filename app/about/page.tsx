@@ -71,6 +71,8 @@ export default function AboutPage() {
       title: "Cybersecurity Analyst",
       bio: "Specializing in threat detection and security analysis to protect client assets.",
       image: Olisa,
+      fullBio: 
+        "Olisa Okafor is a cybersecurity analyst with extensive experience in threat detection and security analysis. He has a strong background in network security, incident response, and threat intelligence. Olisa is skilled in security information and event management (SIEM) systems, network security monitoring, and threat hunting. He is also knowledgeable in security frameworks and regulations such as NIST, ISO 27001, and HIPAA. Olisa is a certified CompTIA Security+ professional and is currently pursuing a degree in Computer Science.",
     },
   ];
 

@@ -86,21 +86,23 @@ export default function Home() {
                 </p>
               </FadeIn>
               <FadeIn direction="up" delay={0.4} duration={0.7}>
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <div className="flex flex-col sm:flex-row gap-4 pt-4 sm:pt-6">
                   <Link href="/courses">
                     <Button
                       size="lg"
-                      className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
+                      className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white w-full sm:w-auto"
                     >
                       Get Started
                     </Button>
                   </Link>
+                  <Link href="/contact">
                   <Button
                     size="lg"
-                    className="bg-white border-2 border-cybernovr-purple text-cybernovr-purple hover:bg-cybernovr-purple/10 transition-all"
+                    className="bg-white border-2 border-cybernovr-purple text-cybernovr-purple hover:bg-cybernovr-purple/10 transition-all w-full sm:w-auto"
                   >
                     Learn More
                   </Button>
+                  </Link>
                 </div>
               </FadeIn>
             </div>
@@ -364,7 +366,7 @@ export default function Home() {
               </h2>
               <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
                 Hear from organizations that have transformed their security
-                posture with Cybernovr.
+                posture with CYBERNOVR .
               </p>
             </div>
           </FadeIn>
@@ -386,7 +388,7 @@ export default function Home() {
               </h2>
               <p className="text-xl mb-8">
                 Contact us today for a free security assessment and discover how
-                Cybernovr can protect your organization.
+                CYBERNOVR  can protect your organization.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Button

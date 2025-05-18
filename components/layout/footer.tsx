@@ -157,15 +157,15 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-charcoal/60 text-sm">
-            &copy; {new Date().getFullYear()} Cybernovr. All rights reserved. RC: 1949693
+            &copy; {new Date().getFullYear()} Cybernovr. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6 text-sm">
-              <li>
+              {/* <li>
                 <Link href="/sitemap" className="text-charcoal/60 hover:text-cybernovr-purple transition-colors">
                   Sitemap
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/privacy" className="text-charcoal/60 hover:text-cybernovr-purple transition-colors">
                   Privacy

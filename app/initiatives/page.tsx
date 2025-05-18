@@ -187,23 +187,53 @@ export default function InitiativesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Cybersecurity Awareness Workshop",
-                date: "June 15, 2025",
+                title: "Cybersecurity and Data Privacy",
+                date: "May 21, 2025",
                 location: "Virtual Event",
                 description:
-                  "Learn essential cybersecurity practices to protect yourself and your organization from common threats.",
+                  "Learn about the latest trends in cybersecurity and data privacy protection strategies.",
               },
               {
-                title: "Youth League Summer Camp",
-                date: "July 10-14, 2025",
-                location: "Cyber City Campus",
-                description: "A week-long immersive experience for students interested in cybersecurity careers.",
-              },
-              {
-                title: "Security Professional Certification Course",
-                date: "August 5-26, 2025",
+                title: "Protection against Election Interference",
+                date: "June 18, 2025",
                 location: "Cybernovr Training Center",
-                description: "Comprehensive training program for aspiring security professionals.",
+                description: "Discover how to identify and counter digital election interference tactics.",
+              },
+              {
+                title: "Pandemic-induced Cyberthreats Awareness",
+                date: "July 23, 2025",
+                location: "Virtual Event",
+                description: "Understanding the evolving cyberthreats that emerged during global health crises.",
+              },
+              {
+                title: "Prevention of Online Gender Exploitation",
+                date: "August 20, 2025",
+                location: "Cybernovr Training Center",
+                description: "Learn strategies to identify and prevent online gender-based exploitation.",
+              },
+              {
+                title: "Understanding and Countering Cyber Terrorism",
+                date: "September 24, 2025",
+                location: "Cyber City Campus",
+                description: "Comprehensive overview of cyber terrorism threats and countermeasures.",
+              },
+              {
+                title: "Safe Social Media Practices",
+                date: "October 22, 2025",
+                location: "Virtual Event",
+                description: "Best practices for maintaining security and privacy while using social media platforms.",
+              },
+              {
+                title: "Online Child Protection and Safety",
+                date: "November 19, 2025",
+                location: "Cybernovr Training Center",
+                description: "Essential knowledge for parents and educators to protect children in digital environments.",
+              },
+              {
+                title: "Secure Online Banking and Financial Transactions",
+                date: "December 17, 2025",
+                location: "Virtual Event",
+                description: "Learn how to secure your financial activities online and prevent fraud.",
               },
             ].map((event, index) => (
               <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md">

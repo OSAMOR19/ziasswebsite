@@ -34,6 +34,10 @@ export default function EnrollmentPage() {
   const [step, setStep] = useState(1)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [paymentError, setPaymentError] = useState("")
+  const [formSubmissionStatus, setFormSubmissionStatus] = useState<{
+    success: boolean;
+    message: string;
+  } | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
@@ -47,10 +51,57 @@ export default function EnrollmentPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setFormSubmissionStatus(null)
 
-    // Store form data and move to payment step
-    setStep(2)
-    setIsSubmitting(false)
+    try {
+      // Submit form data to Form-Data endpoint
+      const response = await fetch('https://api.form-data.com/f/4EMouPdBBf77tu', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          dateOfBirth: formData.dateOfBirth,
+          schoolName: formData.schoolName,
+          classInSchool: formData.classInSchool,
+          applicantContact: formData.applicantContact,
+          headOfSchoolName: formData.headOfSchoolName,
+          headOfSchoolEmail: formData.headOfSchoolEmail,
+          parentName: formData.parentName,
+          parentEmail: formData.parentEmail,
+          schoolConsent: formData.schoolConsent,
+          parentConsent: formData.parentConsent,
+          courseType: "Cybersecurity Youth League",
+          submissionDate: new Date().toISOString(),
+        }),
+      });
+
+      if (response.ok) {
+        // Form submission successful
+        setFormSubmissionStatus({
+          success: true,
+          message: "Registration information submitted successfully!"
+        });
+        // Move to payment step
+        setStep(2);
+      } else {
+        // Form submission failed
+        const errorData = await response.json();
+        setFormSubmissionStatus({
+          success: false,
+          message: errorData.message || "Failed to submit registration information. Please try again."
+        });
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setFormSubmissionStatus({
+        success: false,
+        message: "An error occurred while submitting your information. Please try again."
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   const initiatePayment = async () => {
@@ -145,6 +196,18 @@ export default function EnrollmentPage() {
                   onSubmit={handleSubmit}
                   className="space-y-6"
                 >
+                  {formSubmissionStatus && (
+                    <div className={`p-4 rounded-md ${formSubmissionStatus.success ? 'bg-green-50 border border-green-200 text-green-700' : 'bg-red-50 border border-red-200 text-red-600'}`}>
+                      <div className="flex">
+                        {formSubmissionStatus.success ? (
+                          <CheckCircle className="h-5 w-5 mr-2" />
+                        ) : (
+                          <div className="h-5 w-5 mr-2 text-red-500">⚠️</div>
+                        )}
+                        <p className="text-sm">{formSubmissionStatus.message}</p>
+                      </div>
+                    </div>
+                  )}
                   <div>
                     <Label htmlFor="name">Name</Label>
                     <Input
